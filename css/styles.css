@@ -298,8 +298,23 @@ body {
 .portfolio-page-card {
   margin: 0px auto;
 }
-
 .portfolio-page-description {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+}
+
+.portfolio-page-description-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -321,9 +336,6 @@ body {
 
 .portfolio-card-list-item {
   background-color: var(--brand-background-color);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #eeeeee;
   list-style: none;
   margin: 15px 15px 15px 15px;
   max-height: 404px;
