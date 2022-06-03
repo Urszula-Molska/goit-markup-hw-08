@@ -298,6 +298,11 @@ body {
 .portfolio-page-card {
   margin: 0px auto;
 }
+
+.portfolio-picture {
+  display: block;
+}
+
 .portfolio-page-description {
   padding-left: 24px;
   padding-right: 24px;
