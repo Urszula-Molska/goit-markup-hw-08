@@ -20,7 +20,7 @@ ul {
   --text-hover-color: #2196f3;
   --brand-background-color: #ffffff;
   --background-color-1: #2f303a;
-  --bacground-color-2: #f5f4fa;
+  --background-color-2: #f5f4fa;
   --background-color-3: #e5e5e5;
 }
 
@@ -38,11 +38,11 @@ body {
   margin-right: -25px;
   padding-top: 24px;
   margin: 0 auto;
+  height: 80px;
 }
+
 .border-bottom {
   border-bottom: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .logo {
@@ -107,6 +107,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  height: 600px;
 }
 
 .baner-headline {
@@ -183,7 +184,6 @@ body {
 .lorem-ipsum,
 .what-we-do-section {
   background-color: var(--brand-background-color);
-  padding-bottom: 0px;
   justify-content: center;
 }
 
@@ -226,7 +226,7 @@ body {
   margin-right: -15px;
 }
 
-.our-team-section {
+.our-team-container {
   background-color: var(--background-color-2);
 }
 
@@ -254,7 +254,7 @@ body {
   margin-bottom: 10px;
 }
 .our-team-position {
-  color: var(--text-color_1);
+  color: var(--text-color-1);
 }
 
 .footer {
