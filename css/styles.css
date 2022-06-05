@@ -101,6 +101,13 @@ body {
   height: 16px;
 }
 
+.envelope-icon:focus,
+.envelope-icon:hover,
+.smartphone-icon:hover,
+.smartphone-icon:focus {
+  fill: var(--text-hover-color);
+}
+
 .header-logo:hover,
 .header-logo:focus,
 .menu-item:hover,
@@ -111,6 +118,7 @@ body {
 .footer-logo:focus {
   color: var(--text-hover-color);
 }
+
 .baner-section {
   padding: 200px 452px 200px 452px;
   background-color: var(--background-color-1);
