@@ -22,6 +22,8 @@ ul {
   --background-color-1: #2f303a;
   --background-color-2: #f5f4fa;
   --background-color-3: #e5e5e5;
+  --background-color-4: rgba(255, 255, 255, 0.1);
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -88,6 +90,17 @@ body {
   margin-left: 25px;
   margin-right: 25px;
 }
+
+.envelope-icon {
+  width: 16px;
+  height: 12px;
+}
+
+.smartphone-icon {
+  width: 10px;
+  height: 16px;
+}
+
 .header-logo:hover,
 .header-logo:focus,
 .menu-item:hover,
@@ -108,6 +121,11 @@ body {
   justify-content: center;
   margin: 0 auto;
   height: 600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/background-picture.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .baner-headline {
@@ -156,7 +174,8 @@ body {
   background-color: var(--text-hover-color);
 }
 .what-we-do-title,
-.our-team-title {
+.our-team-title,
+.our-customers-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
@@ -185,20 +204,21 @@ body {
 .what-we-do-section {
   background-color: var(--brand-background-color);
   justify-content: center;
+  padding-bottom: 0;
 }
 
-.lorem-ipsum-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 94px;
-  justify-content: center;
-  margin-left: -15px;
-  margin-right: -15px;
+.lorem-ipsum-icon {
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-color-2);
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .lorem-ipsum-item,
 .what-we-do-item,
-.our-team-card {
+.our-team-card,
+.our-customers-item {
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -218,6 +238,7 @@ body {
   margin-top: 10px;
 }
 
+.lorem-ipsum-list,
 .what-we-do-list {
   display: flex;
   flex-wrap: wrap;
@@ -230,11 +251,13 @@ body {
   background-color: var(--background-color-2);
 }
 
-.our-team-card-list {
+.our-team-card-list,
+.our-customers-list {
   display: flex;
   margin-left: -15px;
   margin-right: -15px;
   justify-content: center;
+  align-items: center;
 }
 
 .our-team-card {
@@ -256,11 +279,104 @@ body {
 .our-team-position {
   color: var(--text-color-1);
 }
+.our-customers-icon {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--icon-color);
+}
+
+.social-links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.social-link-address:hover,
+.social-link-address:focus,
+.social-link-address-footer:hover,
+.social-link-address-footer:focus {
+  background-color: var(--text-hover-color);
+  fill: var(--text-color-2);
+}
+
+.social-link-address:hover > .social-link-icon {
+  fill: var(--text-color-2);
+}
+
+.social-link-icon {
+  fill: var(--icon-color);
+  width: 20px;
+  height: 20px;
+}
+.social-link-address {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: var(--brand-background-color);
+}
+
+.social-links-list-footer {
+  display: flex;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.join-us-section {
+  width: 206px;
+  height: 80px;
+  padding-top: 72px;
+  padding-bottom: 92px;
+  margin-left: 70px;
+}
+.social-link-icon-footer {
+  fill: var(--text-color-2);
+  width: 20px;
+  height: 20px;
+}
+
+.social-link-address-footer {
+  display: flex;
+  flex-direction: row;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: var(--background-color-4);
+}
+
+.join-us-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1721;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.our-customers-icon:hover,
+.our-customers-icon:focus {
+  fill: var(--text-hover-color);
+  border: 1px solid var(--text-hover-color);
+}
 
 .footer {
   color: var(--text-color-2);
   background-color: var(--background-color-1);
   line-height: 1.71;
+  display: flex;
 }
 .footer-box {
   display: flex;
@@ -269,7 +385,9 @@ body {
   align-content: center;
   padding-bottom: 60px;
 }
-
+.footer-columns {
+  display: flex;
+}
 .footer-logo {
   text-decoration: none;
   color: var(--text-color-2);
