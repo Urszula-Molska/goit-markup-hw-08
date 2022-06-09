@@ -117,7 +117,6 @@ body {
 }
 
 .baner-section {
-  padding: 200px 452px 200px 452px;
   background-color: var(--background-color-1);
   color: var(--text-color-2);
   display: flex;
@@ -129,8 +128,8 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/background-picture.jpg');
   background-repeat: no-repeat;
-  background-size: 1600px;
-  background-position: center;
+  max-width: 1600px;
+  background-size: cover;
 }
 
 .baner-headline {
@@ -201,6 +200,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   max-width: 1200px;
+  width: 100%;
 }
 
 .section {
@@ -385,18 +385,17 @@ body {
   color: var(--text-color-2);
   background-color: var(--background-color-1);
   line-height: 1.71;
-  display: flex;
 }
 .footer-box {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-content: center;
   padding-bottom: 60px;
 }
+
 .footer-columns {
   display: flex;
 }
+
 .footer-logo {
   text-decoration: none;
   color: var(--text-color-2);
