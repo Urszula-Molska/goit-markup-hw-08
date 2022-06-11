@@ -213,6 +213,9 @@ body {
 .what-we-do-section {
   background-color: var(--brand-background-color);
   justify-content: center;
+}
+
+.lorem-ipsum {
   padding-bottom: 0;
 }
 
