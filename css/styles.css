@@ -64,6 +64,9 @@ body {
   color: var(--brand-color);
   font-family: 'Raleway';
   margin-right: 70px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-block {
   display: flex;
@@ -96,6 +99,9 @@ a.menu-item.active {
   letter-spacing: 0.02em;
   margin-left: 23px;
   margin-right: 23px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts {
@@ -110,6 +116,9 @@ a.menu-item.active {
   color: var(--text_color_1);
   margin-left: 25px;
   margin-right: 25px;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .envelope-icon {
@@ -186,6 +195,9 @@ a.menu-item.active {
   margin-left: 4px;
   margin-right: 4px;
   border-radius: 4px;
+  transition-property: background-color, box-shadow, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submenu-list-container {
@@ -394,6 +406,9 @@ a.menu-item.active {
   margin-left: 5px;
   margin-right: 5px;
   background-color: var(--brand-background-color);
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-list-footer {
@@ -425,6 +440,9 @@ a.menu-item.active {
   margin-left: 5px;
   margin-right: 5px;
   background-color: var(--background-color-4);
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-us-title {
@@ -461,7 +479,11 @@ a.menu-item.active {
   text-decoration: none;
   color: var(--text-color-2);
   padding-top: 60px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .address-details {
   color: var(--text-color-2);
   padding-top: 20px;
@@ -473,7 +495,11 @@ a.menu-item.active {
   text-decoration: none;
   color: var(--text-color-3);
   margin-top: 9px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-contacts-item:hover,
 .footer-contacts-item:focus {
   color: var(--text-hover-color);
@@ -537,13 +563,21 @@ a.menu-item.active {
   margin: 0px auto;
   position: relative;
   overflow: hidden;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-page-card:hover .overlay,
 .portfolio-page-card:focus .overlay {
+  transform: translatey(0%);
+  cursor: default;
+}
+
+.portfolio-page-card:hover,
+.portfolio-page-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transform: translatey(0%);
 }
 
 .overlay {
