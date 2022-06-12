@@ -68,6 +68,24 @@ body {
 .menu-block {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.active::after {
+  content: '';
+  border-top: 4px solid var(--text-hover-color);
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -32px;
+  left: 0px;
+  display: block;
+}
+
+a.menu-item.active {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .menu-item {
@@ -79,11 +97,14 @@ body {
   margin-left: 23px;
   margin-right: 23px;
 }
+
 .header-contacts {
   display: flex;
   flex-direction: row;
   margin-left: auto;
+  align-items: center;
 }
+
 .header-contacts-item {
   text-decoration: none;
   color: var(--text_color_1);
