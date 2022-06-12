@@ -395,8 +395,8 @@ body {
   margin-bottom: 20px;
 }
 
-.our-customers-icon:hover,
-.our-customers-icon:focus {
+.our-customers-icon-card:hover,
+.our-customers-icon-card:focus {
   fill: var(--text-hover-color);
   border: 1px solid var(--text-hover-color);
 }
