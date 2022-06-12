@@ -279,6 +279,26 @@ body {
   justify-content: center;
   align-items: center;
 }
+.what-we-do-item {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.what-we-do-description {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  line-height: 1.1721;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color-2);
+  padding: 27px;
+  width: 100%;
+  text-align: center;
+}
 
 .our-team-card {
   font-size: 16px;
