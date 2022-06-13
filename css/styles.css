@@ -116,7 +116,7 @@ a.menu-item.active {
   color: var(--text_color_1);
   margin-left: 25px;
   margin-right: 25px;
-  transition-property: color, fill;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -126,6 +126,9 @@ a.menu-item.active {
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .smartphone-icon {
@@ -133,6 +136,9 @@ a.menu-item.active {
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-logo:hover,
@@ -362,6 +368,9 @@ a.menu-item.active {
   fill: var(--icon-color);
   justify-content: center;
   align-items: center;
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-customers-icon {
@@ -395,7 +404,11 @@ a.menu-item.active {
   fill: var(--icon-color);
   width: 20px;
   height: 20px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .social-link-address {
   display: flex;
   width: 44px;
@@ -406,7 +419,7 @@ a.menu-item.active {
   margin-left: 5px;
   margin-right: 5px;
   background-color: var(--brand-background-color);
-  transition-property: background-color, fill;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -427,6 +440,9 @@ a.menu-item.active {
   fill: var(--text-color-2);
   width: 20px;
   height: 20px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-address-footer {
@@ -440,7 +456,7 @@ a.menu-item.active {
   margin-left: 5px;
   margin-right: 5px;
   background-color: var(--background-color-4);
-  transition-property: background-color, fill;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -617,6 +633,11 @@ a.menu-item.active {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--brand-background-color);
+  animation-name: animate75;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-delay: 1000ms;
+  animation-direction: normal;
 }
 
 .is-hidden {
@@ -640,4 +661,32 @@ a.menu-item.active {
   width: 11px;
   height: 11px;
   fill: #000000;
+}
+
+@keyframes animate75 {
+  0% {
+    transform: scale(0.33);
+  }
+
+  50% {
+    transform: scale(0.66);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animate0 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.66);
+  }
+
+  100% {
+    transform: scale(0, 33);
+  }
 }
