@@ -621,23 +621,24 @@ a.menu-item.active {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250s ease, visibility 250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   width: 528px;
   min-height: 581px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--brand-background-color);
-  animation-name: animate75;
-  animation-duration: 3000ms;
-  animation-timing-function: linear;
-  animation-delay: 1000ms;
-  animation-direction: normal;
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .is-hidden {
@@ -645,6 +646,7 @@ a.menu-item.active {
   visibility: hidden;
   pointer-events: none;
 }
+
 .close-button {
   position: absolute;
   top: 8px;
