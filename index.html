@@ -436,6 +436,57 @@
             <use href="./images/sprite.svg#icon-button-close"></use>
           </svg>
         </button>
+        <!--FORMULARZ KONTAKTOWY-->
+        <form class="form">
+          <div class="form-group" role="group" aria-labelledby="contact-details-head">
+            <h3 class="form-headline" id="contact-details-head">
+              Zostaw swoje dane w formularzu poniżej
+            </h3>
+            <label>
+              Imie
+              <svg class="user-icon form-icon">
+                <use href="./images/sprite.svg#icon-user"></use>
+              </svg>
+              <input type="text" name="username" required=" " />
+            </label>
+            <label>
+              Telefon
+              <svg class="telephone-icon form-icon">
+                <use href="./images/sprite.svg#icon-telephone"></use>
+              </svg>
+              <input type="tel" name="phone_number" required=" " />
+            </label>
+            <label>
+              Email
+              <svg class="e-mail-icon form-icon">
+                <use href="./images/sprite.svg#icon-e-mail"></use>
+              </svg>
+              <input type="email" name="email" required=" " />
+            </label>
+            <label>
+              Komentarz
+              <textarea
+                class="comment"
+                type="text"
+                name="comment"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </label>
+          </div>
+          <div class="regulations-and-privacy-policy">
+            <label>
+              <input
+                type="checkbox"
+                name="regulations-and-privacy-policy-agreement"
+                value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności"
+                required
+              />
+              Oświadczam iż akceptuję <a href="">Regulamin</a> i
+              <a href="">Politykę Prywatności</a>.
+            </label>
+          </div>
+          <button class="submit-button" type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

@@ -664,3 +664,118 @@ a.menu-item.active {
   height: 11px;
   fill: #000000;
 }
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+
+.form-headline {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.172;
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.form-group label {
+  color: var(--text-color-1);
+  font-size: 12px;
+  line-height: 1.1666;
+  letter-spacing: 0.01em;
+  margin-top: 12px;
+  display: block;
+  justify-content: flex-start;
+  text-align: left;
+  margin-bottom: 4px;
+  margin-left: 40px;
+}
+
+.form-group input {
+  display: block;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+
+.comment {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  display: block;
+  padding: 12px 16px;
+  color: var(--text-color-1);
+  resize: none;
+}
+
+.regulations-and-privacy-policy {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.regulations-and-privacy-policy a {
+  color: var(--text-hover-color);
+  line-height: 1.7143;
+}
+.submit-button {
+  width: 200px;
+  height: 50px;
+  background: var(--text-hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--text-color-2);
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  margin: 30px 164px 40px 164px;
+}
+
+.user-icon {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 107px;
+  left: 55px;
+}
+
+.telephone-icon {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 174.26px;
+  left: 55px;
+}
+
+.e-mail-icon {
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  top: 243px;
+  left: 55px;
+  border: none;
+}
+
+.form-group input:focus-within {
+  border-color: var(--text-hover-color);
+  color: var(--text-hover-color);
+}
+
+.comment:focus-within {
+  border-color: var(--text-hover-color);
+}
+.form-group label:focus-within {
+  color: var(--text-hover-color);
+}
+.form-icon:focus-within {
+  fill: var(--text-hover-color);
+}
