@@ -657,6 +657,7 @@ a.menu-item.active {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  z-index: 1001;
 }
 
 .close-button-icon {
@@ -664,6 +665,7 @@ a.menu-item.active {
   height: 11px;
   fill: #000000;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -676,10 +678,8 @@ a.menu-item.active {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.172;
-  display: block;
   text-align: center;
   margin-top: 40px;
-  margin-left: 40px;
 }
 
 .form-group label {
@@ -717,8 +717,8 @@ a.menu-item.active {
 }
 
 .regulations-and-privacy-policy {
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
   margin-top: 20px;
 }
 
@@ -765,17 +765,41 @@ a.menu-item.active {
   border: none;
 }
 
-.form-group input:focus-within {
+.label:focus-within input {
   border-color: var(--text-hover-color);
   color: var(--text-hover-color);
+  outline: none;
 }
 
 .comment:focus-within {
   border-color: var(--text-hover-color);
+  outline: none;
 }
+
 .form-group label:focus-within {
   color: var(--text-hover-color);
 }
-.form-icon:focus-within {
+
+.label:focus-within svg {
   fill: var(--text-hover-color);
+}
+
+.regulations-and-privacy-policy::before {
+  display: block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--brand-color);
+  margin-right: 8px;
+}
+
+.policy-text:checked + .regulations-and-privacy-policy::before {
+  background-image: url('../images/icon-tick.svg');
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

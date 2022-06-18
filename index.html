@@ -442,28 +442,28 @@
             <h3 class="form-headline" id="contact-details-head">
               Zostaw swoje dane w formularzu poniżej
             </h3>
-            <label>
+            <label class="label">
               Imie
               <svg class="user-icon form-icon">
                 <use href="./images/sprite.svg#icon-user"></use>
               </svg>
               <input type="text" name="username" required=" " />
             </label>
-            <label>
+            <label class="label">
               Telefon
               <svg class="telephone-icon form-icon">
                 <use href="./images/sprite.svg#icon-telephone"></use>
               </svg>
               <input type="tel" name="phone_number" required=" " />
             </label>
-            <label>
+            <label class="label">
               Email
               <svg class="e-mail-icon form-icon">
                 <use href="./images/sprite.svg#icon-e-mail"></use>
               </svg>
               <input type="email" name="email" required=" " />
             </label>
-            <label>
+            <label class="label">
               Komentarz
               <textarea
                 class="comment"
@@ -473,18 +473,19 @@
               ></textarea>
             </label>
           </div>
-          <div class="regulations-and-privacy-policy">
-            <label>
-              <input
-                type="checkbox"
-                name="regulations-and-privacy-policy-agreement"
-                value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności"
-                required
-              />
-              Oświadczam iż akceptuję <a href="">Regulamin</a> i
-              <a href="">Politykę Prywatności</a>.
-            </label>
-          </div>
+         <div class="checkbox-container">
+          <label class="regulations-and-privacy-policy">
+            <input
+              class="policy-text"
+              type="checkbox"
+              name="regulations-and-privacy-policy-agreement"
+              value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności"
+              required
+            />
+            Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę Prywatności</a>.
+          </label>
+        </div>
+          </form>
           <button class="submit-button" type="submit">Wyślij</button>
         </form>
       </div>
