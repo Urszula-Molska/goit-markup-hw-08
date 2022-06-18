@@ -771,6 +771,12 @@ a.menu-item.active {
   outline: none;
 }
 
+.label:focus-within {
+  border-color: var(--text-hover-color);
+  color: var(--text-hover-color);
+  outline: none;
+}
+
 .comment:focus-within {
   border-color: var(--text-hover-color);
   outline: none;
