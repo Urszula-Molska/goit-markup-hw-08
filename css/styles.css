@@ -188,7 +188,9 @@ a.menu-item.active {
   background-color: var(--text-hover-color);
   border: none;
   padding: 20px 41px 20px 42px;
+  cursor: pointer;
 }
+
 .submenu-button {
   font-weight: 500;
   font-size: 16px;
@@ -204,6 +206,7 @@ a.menu-item.active {
   transition-property: background-color, box-shadow, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .submenu-list-container {
@@ -432,7 +435,6 @@ a.menu-item.active {
 .join-us-section {
   width: 206px;
   height: 80px;
-  padding-top: 72px;
   padding-bottom: 92px;
   margin-left: 70px;
 }
@@ -490,12 +492,14 @@ a.menu-item.active {
 
 .footer-columns {
   display: flex;
+  padding-top: 60px;
+  padding-right: 60px;
+  align-items: baseline;
 }
 
 .footer-logo {
   text-decoration: none;
   color: var(--text-color-2);
-  padding-top: 60px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -672,7 +676,6 @@ a.menu-item.active {
   flex-direction: column;
   padding: 0px;
   margin: 0px;
-  position: relative;
 }
 
 .form-headline {
@@ -692,8 +695,8 @@ a.menu-item.active {
   display: block;
   justify-content: flex-start;
   text-align: left;
-  margin-bottom: 4px;
   margin-left: 40px;
+  position: relative;
 }
 
 .form-group input {
@@ -703,6 +706,7 @@ a.menu-item.active {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
+  margin-top: 4px;
 }
 
 .comment {
@@ -739,31 +743,29 @@ a.menu-item.active {
   font-size: 16px;
   line-height: 1.875;
   margin: 30px 164px 40px 164px;
+  cursor: pointer;
 }
 
 .user-icon {
   width: 12px;
   height: 12px;
-  position: absolute;
-  top: 107px;
-  left: 55px;
 }
 
 .telephone-icon {
   width: 13px;
   height: 13px;
-  position: absolute;
-  top: 174.26px;
-  left: 55px;
 }
 
 .e-mail-icon {
   width: 15px;
   height: 12px;
-  position: absolute;
-  top: 243px;
-  left: 55px;
   border: none;
+}
+
+.form-icon {
+  top: 32px;
+  left: 15px;
+  position: absolute;
 }
 
 .label:focus-within input {
@@ -813,6 +815,7 @@ a.menu-item.active {
   height: 15px;
   border: 1px solid var(--brand-color);
   margin-right: 8px;
+  cursor: pointer;
 }
 
 .policy-text:checked + .regulations-and-privacy-policy::before {
@@ -822,6 +825,7 @@ a.menu-item.active {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
 .policy-text:checked:focus + .regulations-and-privacy-policy::before {
   transition-property: background-color;
   transition-duration: 250ms;
@@ -842,6 +846,10 @@ a.menu-item.active {
   align-items: center;
 }
 
+.newsletter-form {
+  margin-left: auto;
+}
+
 .newsletter-button {
   width: 200px;
   height: 50px;
@@ -856,7 +864,7 @@ a.menu-item.active {
   position: relative;
   padding-right: 76px;
   padding-left: 42px;
-  /*text-align: right;*/
+  cursor: pointer;
 }
 
 .newsletter-input {
@@ -866,7 +874,6 @@ a.menu-item.active {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-right: 12px;
-  margin-left: 78px;
   background: var(--background-color-1);
   padding-top: 15px;
   padding-left: 16px;
@@ -878,9 +885,8 @@ a.menu-item.active {
 }
 
 .newsletter-title {
-  margin-top: 72px;
-  margin-left: 78px;
 }
+
 .newsletter-cont {
   display: flex;
 }
