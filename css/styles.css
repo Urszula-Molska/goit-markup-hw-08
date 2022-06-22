@@ -719,6 +719,7 @@ a.menu-item.active {
   padding: 12px 16px;
   color: var(--text-color-1);
   resize: none;
+  margin-top: 4px;
 }
 
 .regulations-and-privacy-policy {
@@ -744,6 +745,7 @@ a.menu-item.active {
   line-height: 1.875;
   margin: 30px 164px 40px 164px;
   cursor: pointer;
+  border: none;
 }
 
 .user-icon {
