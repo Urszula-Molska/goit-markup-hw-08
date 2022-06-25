@@ -231,7 +231,7 @@ body {
 }
 
 .what-we-do__title,
-.our-team-title,
+.our-team__title,
 .our-customers__title {
   font-weight: 700;
   font-size: 36px;
@@ -241,7 +241,7 @@ body {
   text-align: center;
 }
 
-.our-team-title {
+.our-team__title {
   justify-content: center;
 }
 .container {
@@ -286,7 +286,7 @@ body {
 
 .lorem-ipsum__item,
 .what-we-do__item,
-.our-team-card,
+.our-team__card,
 .our-customers__item {
   margin-left: 15px;
   margin-right: 15px;
@@ -320,7 +320,7 @@ body {
   background-color: var(--background-color-2);
 }
 
-.our-team-card-list,
+.our-team__card-list,
 .our-customers__list {
   display: flex;
   margin-left: -15px;
@@ -349,7 +349,7 @@ body {
   text-align: center;
 }
 
-.our-team-card {
+.our-team__card {
   font-size: 16px;
   line-height: 1.357;
   letter-spacing: 0.03em;
@@ -357,15 +357,15 @@ body {
   text-align: center;
 }
 
-.our-team-picture {
+.our-team__picture {
   margin: 0;
 }
 
-.our-team-name {
+.our-team__name {
   font-weight: 500;
   margin-bottom: 10px;
 }
-.our-team-position {
+.our-team__position {
   color: var(--text-color-1);
 }
 
@@ -388,7 +388,7 @@ body {
   height: 60px;
 }
 
-.social-links-list {
+.our-team__social-links-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -398,19 +398,19 @@ body {
   margin-right: -5px;
 }
 
-.social-link-address:hover,
-.social-link-address:focus,
-.social-link-address-footer:hover,
-.social-link-address-footer:focus {
+.our-team__social-link-address:hover,
+.our-team__social-link-address:focus,
+.our-team__social-link-address-footer:hover,
+.our-team__social-link-address-footer:focus {
   background-color: var(--text-hover-color);
   fill: var(--text-color-2);
 }
 
-.social-link-address:hover > .social-link-icon {
+.our-team__social-link-address:hover > .our-team__social-link-icon {
   fill: var(--text-color-2);
 }
 
-.social-link-icon {
+.our-team__social-link-icon {
   fill: var(--icon-color);
   width: 20px;
   height: 20px;
@@ -419,7 +419,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link-address {
+.our-team__social-link-address {
   display: flex;
   width: 44px;
   height: 44px;
