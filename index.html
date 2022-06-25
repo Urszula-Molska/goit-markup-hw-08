@@ -18,22 +18,22 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="border-bottom">
+    <header class="page-header--border-bottom">
       <div class="container page-header">
-        <a class="logo header-logo" href="index.html">
-          <h3><span class="web-part-of-logo">Web</span>Studio</h3></a
+        <a class="logo page-header__logo" href="index.html">
+          <h3><span class="logo__web-part">Web</span>Studio</h3></a
         >
         <nav class="menu">
           <ul class="menu-block">
-            <li><a class="menu-item active" href="">Agencja</a></li>
-            <li><a class="menu-item" href="portfolio.html">Portfolio</a></li>
-            <li><a class="menu-item" href="">Kontakt</a></li>
+            <li><a class="menu-block__menu-item menu-block__menu-item--active" href="">Agencja</a></li>
+            <li><a class="menu-block__menu-item" href="portfolio.html">Portfolio</a></li>
+            <li><a class="menu-block__menu-item" href="">Kontakt</a></li>
           </ul>
         </nav>
         <ul class="header-contacts">
           <li>
             <a class="header-contacts-item" href="mailto:info@devstudio.com">
-              <svg class="envelope-icon">
+              <svg class="header-contacts-item__envelope-icon">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -41,7 +41,7 @@
           </li>
           <li>
             <a class="header-contacts-item" href="tel:+48111111111">
-              <svg class="smartphone-icon">
+              <svg class="header-contacts-item__smartphone-icon">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111
@@ -51,106 +51,106 @@
       </div>
     </header>
     <main>
-      <section class="baner-section">
-        <h1 class="baner-headline">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button class="button-zamow-usluge" type="button" data-modal-open>Zamów usługę</button>
+      <section class="baner">
+        <h1 class="baner__headline">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <button class="baner__button-zamow-usluge button-zamow-usluge" type="button" data-modal-open>Zamów usługę</button>
       </section>
       <section class="lorem-ipsum container section">
-        <ul class="lorem-ipsum-list">
-          <li class="lorem-ipsum-item">
-            <div class="lorem-ipsum-icon-card">
-              <svg class="lorem-ipsum-icon">
+        <ul class="lorem-ipsum__list">
+          <li class="lorem-ipsum__item">
+            <div class="lorem-ipsum__icon-card">
+              <svg class="lorem-ipsum__icon">
                 <use href="./images/sprite.svg#icon-antenna"></use>
               </svg>
             </div>
-            <h4 class="lorem-ipsum-title">LOREM IPSUM</h4>
-            <p class="lorem-ipsum-subtitle">
+            <h4 class="lorem-ipsum__title">LOREM IPSUM</h4>
+            <p class="lorem-ipsum__subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="lorem-ipsum-item">
-            <div class="lorem-ipsum-icon-card">
-              <svg class="lorem-ipsum-icon">
+           <li class="lorem-ipsum__item">
+            <div class="lorem-ipsum__icon-card">
+              <svg class="lorem-ipsum__icon">
                 <use href="./images/sprite.svg#icon-clock"></use>
               </svg>
             </div>
-            <h4 class="lorem-ipsum-title">LOREM IPSUM</h4>
-            <p class="lorem-ipsum-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+           <h4 class="lorem-ipsum__title">LOREM IPSUM</h4>
+            <p class="lorem-ipsum__subtitle">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="lorem-ipsum-item">
-            <div class="lorem-ipsum-icon-card">
-              <svg class="lorem-ipsum-icon">
+           <li class="lorem-ipsum__item">
+            <div class="lorem-ipsum__icon-card">
+              <svg class="lorem-ipsum__icon">
                 <use href="./images/sprite.svg#icon-diagram"></use>
               </svg>
             </div>
-            <h4 class="lorem-ipsum-title">LOREM IPSUM</h4>
-            <p class="lorem-ipsum-subtitle">
+            <h4 class="lorem-ipsum__title">LOREM IPSUM</h4>
+            <p class="lorem-ipsum__subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="lorem-ipsum-item">
-            <div class="lorem-ipsum-icon-card">
-              <svg class="lorem-ipsum-icon">
+           <li class="lorem-ipsum__item">
+            <div class="lorem-ipsum__icon-card">
+              <svg class="lorem-ipsum__icon">
                 <use href="./images/sprite.svg#icon-astronaut"></use>
               </svg>
             </div>
-            <h4 class="lorem-ipsum-title">LOREM IPSUM</h4>
-            <p class="lorem-ipsum-subtitle">
+           <h4 class="lorem-ipsum__title">LOREM IPSUM</h4>
+            <p class="lorem-ipsum__subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
         </ul>
       </section>
-      <section class="what-we-do-section section container">
-        <h2 class="what-we-do-title">Czym się zajmujemy</h2>
-        <ul class="what-we-do-list">
-          <li class="what-we-do-item">
+      <section class="what-we-do section container">
+        <h2 class="what-we-do__title">Czym się zajmujemy</h2>
+        <ul class="what-we-do__list">
+          <li class="what-we-do__item">
             <img
               src="images/close-up-image-programer-working-his-desk-office_.jpg"
               alt="Close-up image of programmer working at his desk"
               width="370"
               height="294"
             />
-            <div class="what-we-do-description">
-              <h4 class="what-we-do-subtitle">Aplikacje komputerowe</h4>
+            <div class="what-we-do__description">
+              <h4 class="what-we-do__subtitle">Aplikacje komputerowe</h4>
             </div>
           </li>
-          <li class="what-we-do-item">
+          <li class="what-we-do__item">
             <img
               src="images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_.jpg"
               alt="Web ui designer is developing application for smartphones"
               width="370"
               height="294"
             />
-            <div class="what-we-do-description">
-              <h4 class="what-we-do-subtitle">Aplikacje mobilne</h4>
+            <div class="what-we-do__description">
+              <h4 class="what-we-do__subtitle">Aplikacje mobilne</h4>
             </div>
           </li>
-          <li class="what-we-do-item">
+          <li class="what-we-do__item">
             <img
               src="images/creative-artist-web-design-with-working-colour-selection-graphic-tablet_.jpg"
               alt="Creative artist is working on colour selection graphic tablet"
               width="370"
               height="294"
             />
-            <div class="what-we-do-description">
-              <h4 class="what-we-do-subtitle">Rozwiązania graficzne</h4>
+            <div class="what-we-do__description">
+              <h4 class="what-we-do__subtitle">Rozwiązania graficzne</h4>
             </div>
           </li>
         </ul>
       </section>
-      <div class="our-team-container">
-        <section class="our-team-section container section">
-          <h2 class="our-team-title">Nasz zespół</h2>
-          <ul class="our-team-card-list">
-            <li class="our-team-card">
-              <figure class="our-team-picture">
+      <div>
+        <section class="our-team container section">
+          <h2 class="our-team__title">Nasz zespół</h2>
+          <ul class="our-team__card-list">
+            <li class="our-team__card">
+              <figure class="our-team__picture">
                 <img
                   src="images/product_designer.jpg"
                   alt="picture of Product Designer"
@@ -158,12 +158,12 @@
                   height="260"
                 />
                 <figcaption>
-                  <h3 class="our-team-name">John Doe</h3>
-                  <p class="our-team-position">Product Designer</p>
-                  <ul class="social-links-list">
-                    <li class="social-links-item">
-                      <a class="social-link-address" href="">
-                        <svg class="social-link-icon">
+                  <h3 class="our-team__name">John Doe</h3>
+                  <p class="our-team__position">Product Designer</p>
+                  <ul class="our-team__social-links-list">
+                    <li class="our-team__social-links-item">
+                      <a class="our-team__social-link-address" href="">
+                        <svg class="our-team__social-link-icon">
                           <use href="./images/sprite.svg#icon-instagram"></use>
                         </svg>
                       </a>
@@ -328,47 +328,47 @@
           </ul>
         </section>
       </div>
-      <section class="our-customers-section section container">
-        <h2 class="our-customers-title">Nasi klienci</h2>
-        <ul class="our-customers-list">
-          <li class="our-customers-item">
-            <a class="our-customers-icon-card" href="">
-              <svg class="our-customers-icon">
+      <section class="our-customers section container">
+        <h2 class="our-customers__title">Nasi klienci</h2>
+        <ul class="our-customers__list">
+          <li class="our-customers__item">
+            <a class="our-customers__icon-card" href="">
+              <svg class="our-customers__icon">
                 <use href="./images/sprite.svg#icon-logo-1"></use>
               </svg>
             </a>
           </li>
-          <li class="our-customers-item">
-            <a class="our-customers-icon-card" href="">
-              <svg class="our-customers-icon">
+          <li class="our-customers__item">
+            <a class="our-customers__icon-card" href="">
+              <svg class="our-customers__icon">
                 <use href="./images/sprite.svg#icon-logo-2"></use>
               </svg>
             </a>
           </li>
-          <li class="our-customers-item">
-            <a class="our-customers-icon-card" href="">
-              <svg class="our-customers-icon">
+          <li class="our-customers__item">
+            <a class="our-customers__icon-card" href="">
+              <svg class="our-customers__icon">
                 <use href="./images/sprite.svg#icon-logo-3"></use>
               </svg>
             </a>
           </li>
-          <li class="our-customers-item">
-            <a class="our-customers-icon-card" href="">
-              <svg class="our-customers-icon">
+          <li class="our-customers__item">
+            <a class="our-customers__icon-card" href="">
+              <svg class="our-customers__icon">
                 <use href="./images/sprite.svg#icon-logo-4"></use>
               </svg>
             </a>
           </li>
-          <li class="our-customers-item">
-            <a class="our-customers-icon-card" href="">
-              <svg class="our-customers-icon">
+          <li class="our-customers__item">
+            <a class="our-customers__icon-card" href="">
+              <svg class="our-customers__icon">
                 <use href="./images/sprite.svg#icon-logo-5"></use>
               </svg>
             </a>
           </li>
-          <li class="our-customers-item">
-            <a class="our-customers-icon-card" href="">
-              <svg class="our-customers-icon">
+          <li class="our-customers__item">
+            <a class="our-customers__icon-card" href="">
+              <svg class="our-customers__icon">
                 <use href="./images/sprite.svg#icon-logo-6"></use>
               </svg>
             </a>
