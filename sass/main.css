@@ -4,6 +4,20 @@
   pointer-events: none;
 }
 
+:root {
+  --brand-color: #212121;
+  --text-color-1: #757575;
+  --text-color-2: #ffffff;
+  --text-color-3: rgba(255, 255, 255, 0.6);
+  --text-hover-color: #2196f3;
+  --brand-background-color: #ffffff;
+  --background-color-1: #2f303a;
+  --background-color-2: #f5f4fa;
+  --background-color-3: #e5e5e5;
+  --background-color-4: rgba(255, 255, 255, 0.1);
+  --icon-color: #afb1b8;
+}
+
 h1,
 h2,
 h3,
@@ -425,7 +439,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-menu-block {
+.menu-block {
   display: flex;
   flex-direction: row;
   align-items: center;
