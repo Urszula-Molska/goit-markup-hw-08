@@ -71,6 +71,16 @@ body {
   fill: #000000;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
 .social-links__address:hover,
 .social-links__address:focus {
   background-color: var(--text-hover-color);
@@ -103,14 +113,4 @@ body {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-  margin-bottom: 30px;
-  margin-left: -5px;
-  margin-right: -5px;
 }/*# sourceMappingURL=main.css.map */
