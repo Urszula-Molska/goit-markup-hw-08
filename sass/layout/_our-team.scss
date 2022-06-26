@@ -1,0 +1,48 @@
+.our-team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.our-team__title {
+  justify-content: center;
+}
+
+.our-team {
+  background-color: var(--background-color-2);
+}
+.our-team__card-list {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-team__card-item {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.our-team__card-item {
+  font-size: 16px;
+  line-height: 1.357;
+  letter-spacing: 0.03em;
+  background-color: var(--brand-background-color);
+  text-align: center;
+}
+
+.our-team__picture {
+  margin: 0;
+}
+
+.our-team__name {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.our-team__position {
+  color: var(--text-color-1);
+}

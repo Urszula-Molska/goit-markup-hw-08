@@ -335,54 +335,48 @@
     <footer class="footer">
       <!--left-section-->
       <div class="footer-columns container">
-        <section class="footer-logo-section__logo-section">
+        <section class="footer-logo-section">
           <a class="logo footer-logo-section__logo" href="index.html"
-            ><h3><span class="web-part-of-logo">Web</span>Studio</h3></a
+            ><h3><span class="logo__web-part">Web</span>Studio</h3></a
           >
-          <address class="footer-logo-section__address-details">
-            m. Warszawa, Aleje Jerozolimskie 21
-          </address>
+          <address class="footer-logo-section__address-details">m. Warszawa, Aleje Jerozolimskie 21</address>
           <div class="footer-logo-section__contacts">
             <address>
-              <a class="footer-logo-section__contacts-item" href="mailto:info@example.com"
-                >info@example.com</a
-              >
+              <a class="footer-logo-section__contacts-item" href="mailto:info@example.com">info@example.com</a>
             </address>
             <address>
-              <a class="footer-logo-section__contacts-item" href="tel:+48111111111"
-                >+48 111 111 111</a
-              >
+              <a class="footer-logo-section__contacts-item" href="tel:+48111111111">+48 111 111 111</a>
             </address>
           </div>
         </section>
         <!--right-section-->
         <section class="join-us-section">
           <h4 class="join-us-section__title">DOŁĄCZ DO NAS</h4>
-          <ul class="social-links-footer">
+          <ul class="social-links">
             <li class="social-links-footer__item">
-              <a class="social-links-footer__address" href="">
-                <svg class="social-links-footer__icon">
+              <a class="social-links__address social-links__address--footer " href="">
+                <svg class="social-links__icon social-links__icon--footer">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-footer__item">
-              <a class="social-links-footer__address" href="">
-                <svg class="social-links-footer__icon">
+              <a class="social-links__address social-links__address--footer " href="">
+                <svg class="social-links__icon social-links__icon--footer">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-footer__item">
-              <a class="social-links-footer__address" href="">
-                <svg class="social-links-footer__icon">
+              <a class="social-links__address social-links__address--footer " href="">
+                <svg class="social-links__icon social-links__icon--footer">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-footer__item">
-              <a class="social-links-footer__address" href="">
-                <svg class="social-links-footer__icon">
+              <a class="social-links__address social-links__address--footer " href="">
+                <svg class="social-links__icon social-links__icon--footer">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -391,24 +385,78 @@
         </section>
         <!--NEWSLETTER-->
         <form class="newsletter-form">
-          <h4 class="newsletter-form__title join-us-section__title">Zapisz się do newslettera</h4>
+        <h4 class="newsletter-form__title join-us-section__title">Zapisz się do newslettera</h4>
           <div class="newsletter-form__container">
-            <input
-              class="newsletter-form__input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              required=" "
-            />
-            <button class="newsletter-form__button" type="submit">
-              Zapisz się
-              <svg class="newsletter-form__icon">
-                <use href="./images/sprite.svg#icon-send"></use>
-              </svg>
-            </button>
+          <input class="newsletter-form__input" type="email" name="email" placeholder="E-mail" required=" " />
+          <button class="newsletter-form__button" type="submit">Zapisz się
+            <svg class="newsletter-form__icon">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+          </button>
           </div>
         </form>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close-button" data-modal-close>
+          <svg class="modal__close-button-icon">
+            <use href="./images/sprite.svg#icon-button-close"></use>
+          </svg>
+        </button>
+        <!--FORMULARZ KONTAKTOWY-->
+        <form class="form">
+          <div class="contact-form" role="group" aria-labelledby="contact-details-head">
+            <h3 class="contact-form__headline" id="contact-details-head">
+              Zostaw swoje dane w formularzu poniżej
+            </h3>
+            <label class="contact-form__label">
+              Imie
+              <svg class="user-icon contact-form__icon">
+                <use href="./images/sprite.svg#icon-user"></use>
+              </svg>
+              <input class="contact-form__input" type="text" name="username" required=" " />
+            </label>
+            <label class="contact-form__label">
+              Telefon
+              <svg class="telephone-icon contact-form__icon">
+                <use href="./images/sprite.svg#icon-telephone"></use>
+              </svg>
+              <input class="contact-form__input" type="tel" name="phone_number" required=" " />
+            </label>
+            <label class="contact-form__label">
+              Email
+              <svg class="e-mail-icon contact-form__icon">
+                <use href="./images/sprite.svg#icon-e-mail"></use>
+              </svg>
+              <input class="contact-form__input" type="email" name="email" required=" " />
+            </label>
+            <label class="contact-form__label">
+              Komentarz
+              <textarea
+                class="contact-form__comment"
+                type="text"
+                name="contact-form__comment"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </label>
+          </div>
+         <div class="checkbox-container">
+          <input id="user-policy"
+              class="checkbox-container__policy-text "
+              type="checkbox"
+              name="regulations-and-privacy-policy-agreement"
+              value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności"
+              required/>
+            <label for="user-policy" class="checkbox-container__regulations-and-privacy-policy">
+            Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę Prywatności</a>.
+          </label>
+        </div>
+          </form>
+          <button class="checkbox-container__submit-button" type="submit">Wyślij</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

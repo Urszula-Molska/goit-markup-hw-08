@@ -1,0 +1,109 @@
+.page-header {
+  background-color: var(--brand-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: -25px;
+  padding-top: 24px;
+  margin: 0 auto;
+  height: 80px;
+}
+
+.page-header--border-bottom {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__logo {
+  display: flex;
+  text-decoration: none;
+  color: var(--brand-color);
+  font-family: 'Raleway';
+  margin-right: 70px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+menu-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*.active::after*/
+.menu-block__menu-item--active::after {
+  content: '';
+  border-top: 4px solid var(--text-hover-color);
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -32px;
+  left: 0px;
+  display: block;
+}
+
+/*a.menu-item.active*/
+/*.menu-block__menu-item.active*/
+.menu-block__menu-item--active {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.menu-block__menu-item {
+  text-decoration: none;
+  color: var(--brand-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-left: 23px;
+  margin-right: 23px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  align-items: center;
+}
+
+.header-contacts-item {
+  text-decoration: none;
+  color: var(--text_color_1);
+  margin-left: 25px;
+  margin-right: 25px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contacts-item__envelope-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contacts-item__smartphone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-header__logo:hover,
+.page-header__logo:focus,
+.menu-block__menu-item:hover,
+.menu-block__menu-item:focus,
+.header-contacts-item:hover,
+.header-contacts-item:focus {
+  color: var(--text-hover-color);
+}

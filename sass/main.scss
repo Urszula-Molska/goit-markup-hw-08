@@ -2,6 +2,19 @@
 @import './base/common';
 @import './base/container';
 @import './base/section';
+
 @import './components/modal-button';
 @import './components/social-links';
+@import './components/logo';
+
+@import './layout/header';
+@import './layout/baner';
+@import './layout/lorem-ipsum';
+@import './layout/what-we-do';
+@import './layout/our-team';
+@import './layout/our-customers';
+
 @import './themes/social-links-footer';
+
+@import './pages/portfolio-gallery';
+@import './pages/portfolio-submenu-list';
