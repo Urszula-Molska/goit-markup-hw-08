@@ -896,9 +896,6 @@ body {
   color: var(--text-color-3);
 }
 
-.newsletter-form__title {
-}
-
 .newsletter-form__container {
   display: flex;
 }
