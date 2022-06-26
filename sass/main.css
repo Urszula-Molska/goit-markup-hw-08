@@ -116,4 +116,13 @@ body {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links__icon--footer {
+  fill: var(--text-color-2);
+}
+
+.social-links__address--footer {
+  flex-direction: row;
+  background-color: var(--background-color-4);
 }/*# sourceMappingURL=main.css.map */
