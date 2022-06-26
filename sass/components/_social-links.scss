@@ -1,11 +1,14 @@
 .social-links {
   display: flex;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.social-links--card-list {
   justify-content: center;
   align-items: center;
   margin-top: 16px;
   margin-bottom: 30px;
-  margin-left: -5px;
-  margin-right: -5px;
 }
 
 .social-links__address:hover,
