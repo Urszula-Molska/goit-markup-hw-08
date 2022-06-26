@@ -1,0 +1,12 @@
+.footer {
+  color: var(--text-color-2);
+  background-color: var(--background-color-1);
+  line-height: 1.71;
+}
+
+.footer-columns {
+  display: flex;
+  padding-top: 60px;
+  padding-right: 60px;
+  align-items: baseline;
+}

@@ -2,19 +2,21 @@
 @import './base/common';
 @import './base/container';
 @import './base/section';
-
-@import './components/modal-button';
+@import './base/footer-containers';
+@import './components/modal';
+@import './components/backdrop';
+@import './components/contact-form';
 @import './components/social-links';
 @import './components/logo';
-
+@import './components/newsletter-form';
 @import './layout/header';
 @import './layout/baner';
 @import './layout/lorem-ipsum';
 @import './layout/what-we-do';
 @import './layout/our-team';
 @import './layout/our-customers';
-
+@import './layout/footer-logo-section';
+@import './layout/join-us-section-in-footer';
 @import './themes/social-links-footer';
-
 @import './pages/portfolio-gallery';
 @import './pages/portfolio-submenu-list';
