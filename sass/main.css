@@ -419,7 +419,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-right: -25px;
-  padding-top: 24px;
+  /*padding-top: 24px;*/
   margin: 0 auto;
   height: 80px;
 }
