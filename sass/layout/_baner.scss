@@ -27,15 +27,15 @@
   &__button-zamow-usluge {
     margin-top: 30px;
   }
+}
 
-  &-zamow-usluge {
-    text-align: center;
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--text-color-2);
-    background-color: var(--text-hover-color);
-    border: none;
-    padding: 20px 41px 20px 42px;
-    cursor: pointer;
-  }
+.button-zamow-usluge {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-color-2);
+  background-color: var(--text-hover-color);
+  border: none;
+  padding: 20px 41px 20px 42px;
+  cursor: pointer;
 }
