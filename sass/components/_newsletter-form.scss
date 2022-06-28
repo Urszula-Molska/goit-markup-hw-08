@@ -1,50 +1,50 @@
 .newsletter-form {
   margin-left: auto;
-}
 
-.newsletter-form__button {
-  width: 200px;
-  height: 50px;
-  background: var(--text-hover-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: var(--text-color-2);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  border: none;
-  position: relative;
-  padding-right: 76px;
-  padding-left: 42px;
-  cursor: pointer;
-}
+  &__button {
+    width: 200px;
+    height: 50px;
+    background: var(--text-hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--text-color-2);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    border: none;
+    position: relative;
+    padding-right: 76px;
+    padding-left: 42px;
+    cursor: pointer;
+  }
 
-.newsletter-form__input {
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  margin-right: 12px;
-  background: var(--background-color-1);
-  padding-top: 15px;
-  padding-left: 16px;
-  padding-bottom: 15px;
-  font-size: 16px;
-  line-height: 1.25px;
-  letter-spacing: 0.03em;
-  color: var(--text-color-3);
-}
+  &__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-right: 12px;
+    background: var(--background-color-1);
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.25px;
+    letter-spacing: 0.03em;
+    color: var(--text-color-3);
+  }
 
-.newsletter-form__container {
-  display: flex;
-}
+  &__container {
+    display: flex;
+  }
 
-.newsletter-form__icon {
-  width: 24px;
-  height: 24px;
-  fill: var(--text-color-2);
-  position: absolute;
-  top: 13px;
-  right: 28px;
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--text-color-2);
+    position: absolute;
+    top: 13px;
+    right: 28px;
+  }
 }

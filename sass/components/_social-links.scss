@@ -2,6 +2,36 @@
   display: flex;
   margin-left: -5px;
   margin-right: -5px;
+
+  &__icon {
+    fill: var(--icon-color);
+    width: 20px;
+    height: 20px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__address {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: var(--brand-background-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__address:hover,
+  &__address:focus {
+    background-color: var(--text-hover-color);
+    fill: var(--text-color-2);
+  }
 }
 
 .social-links--card-list {
@@ -11,36 +41,6 @@
   margin-bottom: 30px;
 }
 
-.social-links__address:hover,
-.social-links__address:focus {
-  background-color: var(--text-hover-color);
-  fill: var(--text-color-2);
-}
-
 .social-links__address:hover > .social-links__icon {
   fill: var(--text-color-2);
-}
-
-.social-links__icon {
-  fill: var(--icon-color);
-  width: 20px;
-  height: 20px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-links__address {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: var(--brand-background-color);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

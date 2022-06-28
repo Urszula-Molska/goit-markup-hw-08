@@ -1,177 +1,178 @@
 .contact-form {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
   padding: 0px;
-  margin: 0px;
-}
+  margin: 0px;*/
 
-.contact-form__headline {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.172;
-  text-align: center;
-  margin-top: 40px;
-}
+  &__headline {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.172;
+    text-align: center;
+    margin-top: 40px;
+  }
 
-.contact-form__label {
-  color: var(--text-color-1);
-  font-size: 12px;
-  line-height: 1.1666;
-  letter-spacing: 0.01em;
-  margin-top: 12px;
-  display: block;
-  justify-content: flex-start;
-  text-align: left;
-  margin-left: 40px;
-  position: relative;
-}
+  &__label {
+    color: var(--text-color-1);
+    font-size: 12px;
+    line-height: 1.1666;
+    letter-spacing: 0.01em;
+    margin-top: 12px;
+    display: block;
+    justify-content: flex-start;
+    text-align: left;
+    margin-left: 40px;
+    position: relative;
+  }
 
-.contact-form__input {
-  display: block;
-  width: 448px;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding-left: 42px;
-  margin-top: 4px;
-}
+  &__input {
+    display: block;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    margin-top: 4px;
+  }
 
-.contact-form__comment {
-  width: 448px;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  display: block;
-  padding: 12px 16px;
-  color: var(--text-color-1);
-  resize: none;
-  margin-top: 4px;
-}
-.checkbox-container__regulations-and-privacy-policy {
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-}
+  &__comment {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    display: block;
+    padding: 12px 16px;
+    color: var(--text-color-1);
+    resize: none;
+    margin-top: 4px;
+  }
 
-.checkbox-container__regulations-and-privacy-policy a {
-  color: var(--text-hover-color);
-  line-height: 1.7143;
-}
-.checkbox-container__submit-button {
-  width: 200px;
-  height: 50px;
-  background: var(--text-hover-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: var(--text-color-2);
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  margin: 30px 164px 40px 164px;
-  cursor: pointer;
-  border: none;
-}
+  &__icon {
+    top: 32px;
+    left: 15px;
+    position: absolute;
+  }
 
-.user-icon {
-  width: 12px;
-  height: 12px;
-}
+  &__label:focus-within input {
+    border-color: var(--text-hover-color);
+    color: var(--text-hover-color);
+    outline: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.telephone-icon {
-  width: 13px;
-  height: 13px;
-}
+  &__label:focus-within {
+    border-color: var(--text-hover-color);
+    color: var(--text-hover-color);
+    outline: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.e-mail-icon {
-  width: 15px;
-  height: 12px;
-  border: none;
-}
+  &__comment:focus-within {
+    border-color: var(--text-hover-color);
+    outline: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.contact-form__icon {
-  top: 32px;
-  left: 15px;
-  position: absolute;
-}
+  .checkbox-container__regulations-and-privacy-policy {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
 
-.contact-form__label:focus-within input {
-  border-color: var(--text-hover-color);
-  color: var(--text-hover-color);
-  outline: none;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .checkbox-container__regulations-and-privacy-policy a {
+    color: var(--text-hover-color);
+    line-height: 1.7143;
+  }
+  .checkbox-container__submit-button {
+    width: 200px;
+    height: 50px;
+    background: var(--text-hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--text-color-2);
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    margin: 30px 164px 40px 164px;
+    cursor: pointer;
+    border: none;
+  }
 
-.contact-form__label:focus-within {
-  border-color: var(--text-hover-color);
-  color: var(--text-hover-color);
-  outline: none;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .user-icon {
+    width: 12px;
+    height: 12px;
+  }
 
-.contact-form__comment:focus-within {
-  border-color: var(--text-hover-color);
-  outline: none;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .telephone-icon {
+    width: 13px;
+    height: 13px;
+  }
 
-.contact-form .contact-form__label:focus-within {
-  color: var(--text-hover-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .e-mail-icon {
+    width: 15px;
+    height: 12px;
+    border: none;
+  }
 
-.contact-form__label:focus-within .contact-form__icon {
-  fill: var(--text-hover-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .contact-form .contact-form__label:focus-within {
+    color: var(--text-hover-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.checkbox-container__regulations-and-privacy-policy::before {
-  display: inline-block;
-  content: '';
-  width: 16px;
-  height: 15px;
-  border: 1px solid var(--brand-color);
-  margin-right: 8px;
-  cursor: pointer;
-}
+  .contact-form__label:focus-within .contact-form__icon {
+    fill: var(--text-hover-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.checkbox-container__policy-text:checked
-  + .checkbox-container__regulations-and-privacy-policy::before {
-  background-image: url('../images/icon-tick.svg');
-  background-color: var(--text-hover-color);
-  border: none;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
+  .checkbox-container__regulations-and-privacy-policy::before {
+    display: inline-block;
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--brand-color);
+    margin-right: 8px;
+    cursor: pointer;
+  }
 
-.checkbox-container__policy-text:checked:focus
-  + .checkbox-container__regulations-and-privacy-policy::before {
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .checkbox-container__policy-text:checked
+    + .checkbox-container__regulations-and-privacy-policy::before {
+    background-image: url('../images/icon-tick.svg');
+    background-color: var(--text-hover-color);
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 
-.checkbox-container__policy-text:checked {
-  opacity: 0;
-}
+  .checkbox-container__policy-text:checked:focus
+    + .checkbox-container__regulations-and-privacy-policy::before {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.checkbox-container__policy-text {
-  opacity: 0;
-}
+  .checkbox-container__policy-text:checked {
+    opacity: 0;
+  }
 
-.checkbox-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .checkbox-container__policy-text {
+    opacity: 0;
+  }
+
+  .checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
