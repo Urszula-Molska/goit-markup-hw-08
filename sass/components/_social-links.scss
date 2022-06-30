@@ -32,13 +32,13 @@
     background-color: var(--text-hover-color);
     fill: var(--text-color-2);
   }
-}
 
-.social-links--card-list {
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-  margin-bottom: 30px;
+  &--card-list {
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 30px;
+  }
 }
 
 .social-links__address:hover > .social-links__icon {

@@ -5,7 +5,8 @@
   line-height: 1.38;
   letter-spacing: 0.03em;
   margin-right: 70px;
-}
-.logo__web-part {
-  color: var(--text-hover-color);
+
+  &__web-part {
+    color: var(--text-hover-color);
+  }
 }

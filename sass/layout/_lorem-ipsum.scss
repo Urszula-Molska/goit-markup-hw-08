@@ -2,48 +2,48 @@
   padding-bottom: 0;
   background-color: var(--brand-background-color);
   justify-content: center;
-}
 
-.lorem-ipsum__icon-card {
-  display: flex;
-  width: 270px;
-  height: 120px;
-  background-color: var(--background-color-2);
-  border-radius: 4px;
-  margin-bottom: 30px;
-  justify-content: center;
-  align-items: center;
-}
+  &__icon-card {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-color-2);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+  }
 
-.lorem-ipsum__icon {
-  width: 70px;
-  height: 70px;
-}
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
 
-.lorem-ipsum__item {
-  margin-left: 15px;
-  margin-right: 15px;
-}
+  &__item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 
-.lorem-ipsum__title {
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+  &__title {
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 
-.lorem-ipsum__subtitle {
-  color: var(--text-color-1);
-  line-height: 1.71;
-  width: 270px;
-  letter-spacing: 0.03em;
-  margin-top: 10px;
-}
+  &__subtitle {
+    color: var(--text-color-1);
+    line-height: 1.71;
+    width: 270px;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+  }
 
-.lorem-ipsum__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: -15px;
-  margin-right: -15px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }

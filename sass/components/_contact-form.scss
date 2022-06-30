@@ -1,8 +1,8 @@
 .contact-form {
   /*display: flex;
   flex-direction: column;
-  padding: 0px;
-  margin: 0px;*/
+  padding: 0px;*/
+  margin: 0px;
 
   &__headline {
     font-weight: 700;
@@ -54,15 +54,6 @@
     position: absolute;
   }
 
-  &__label:focus-within input {
-    border-color: var(--text-hover-color);
-    color: var(--text-hover-color);
-    outline: none;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
   &__label:focus-within {
     border-color: var(--text-hover-color);
     color: var(--text-hover-color);
@@ -80,87 +71,69 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .checkbox-container__regulations-and-privacy-policy {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .checkbox-container__regulations-and-privacy-policy a {
-    color: var(--text-hover-color);
-    line-height: 1.7143;
-  }
-  .checkbox-container__submit-button {
-    margin: 30px 164px 40px 164px;
-  }
-
-  .user-icon {
+  &__icon--user-icon {
     width: 12px;
     height: 12px;
   }
 
-  .telephone-icon {
+  &__icon--telephone-icon {
     width: 13px;
     height: 13px;
   }
 
-  .e-mail-icon {
+  &__icon--e-mail-icon {
     width: 15px;
     height: 12px;
     border: none;
   }
 
-  .contact-form .contact-form__label:focus-within {
-    color: var(--text-hover-color);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .contact-form__label:focus-within .contact-form__icon {
-    fill: var(--text-hover-color);
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .checkbox-container__regulations-and-privacy-policy::before {
-    display: inline-block;
-    content: '';
-    width: 16px;
-    height: 15px;
-    border: 1px solid var(--brand-color);
-    margin-right: 8px;
-    cursor: pointer;
-  }
-
-  .checkbox-container__policy-text:checked
-    + .checkbox-container__regulations-and-privacy-policy::before {
-    background-image: url('../images/icon-tick.svg');
-    background-color: var(--text-hover-color);
-    border: none;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-
-  .checkbox-container__policy-text:checked:focus
-    + .checkbox-container__regulations-and-privacy-policy::before {
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .checkbox-container__policy-text:checked {
-    opacity: 0;
-  }
-
-  .checkbox-container__policy-text {
-    opacity: 0;
-  }
-
-  .checkbox-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  & {
+    &__label {
+      &:focus-within {
+        color: var(--text-hover-color);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+    &__icon {
+      &:focus-within {
+        color: var(--text-hover-color);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+    &__input {
+      &:focus-within {
+        border-color: var(--text-hover-color);
+        color: var(--text-hover-color);
+        outline: none;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
   }
 }
+/*.contact-form .contact-form__label:focus-within {
+  color: var(--text-hover-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form__label:focus-within .contact-form__icon {
+  fill: var(--text-hover-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+  &__label:focus-within input {
+    border-color: var(--text-hover-color);
+    color: var(--text-hover-color);
+    outline: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}*/

@@ -1,38 +1,38 @@
 .what-we-do {
   background-color: var(--brand-background-color);
   justify-content: center;
-}
 
-.what-we-do__item {
-  margin-left: 15px;
-  margin-right: 15px;
-}
+  &__item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 
-.what-we-do__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: -15px;
-  margin-right: -15px;
-}
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 
-.what-we-do__item {
-  position: relative;
-  top: 0;
-  left: 0;
-}
+  &__item {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 
-.what-we-do__description {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background: rgba(47, 48, 58, 0.8);
-  font-weight: 700;
-  line-height: 1.1721;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--text-color-2);
-  padding: 27px;
-  width: 100%;
-  text-align: center;
+  &__description {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    line-height: 1.1721;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color-2);
+    padding: 27px;
+    width: 100%;
+    text-align: center;
+  }
 }

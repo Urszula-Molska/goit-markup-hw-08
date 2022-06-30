@@ -29,8 +29,14 @@
     height: 11px;
     fill: #000000;
   }
+
+  & {
+    .is-hidden {
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
 }
 
-.is-hidden .modal {
+/*.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
-}
+}*/
