@@ -46,6 +46,13 @@
     color: var(--text-color-1);
     resize: none;
     margin-top: 4px;
+    &:focus-within {
+      border-color: var(--text-hover-color);
+      outline: none;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 
   &__icon {
@@ -61,14 +68,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &__comment:focus-within {
-    border-color: var(--text-hover-color);
-    outline: none;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus-within {
+      color: var(--text-hover-color);
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 
   &__icon--user-icon {
@@ -96,15 +101,10 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
-    &__icon {
-      &:focus-within {
-        color: var(--text-hover-color);
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      }
-    }
-    &__input {
+  }
+
+  &__label {
+    .contact-form__input {
       &:focus-within {
         border-color: var(--text-hover-color);
         color: var(--text-hover-color);
@@ -115,7 +115,15 @@
       }
     }
   }
+
+  .contact-form__label:focus-within .contact-form__icon {
+    fill: var(--text-hover-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
+
 /*.contact-form .contact-form__label:focus-within {
   color: var(--text-hover-color);
   transition-property: color;
@@ -130,7 +138,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-  &__label:focus-within input {
+  contact-form_label:focus-within .contact-form__input {
     border-color: var(--text-hover-color);
     color: var(--text-hover-color);
     outline: none;
