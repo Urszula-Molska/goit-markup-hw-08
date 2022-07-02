@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: space-between;
   margin-right: -25px;
-  /*padding-top: 24px;*/
   margin: 0 auto;
   height: 80px;
 
@@ -17,10 +16,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__logo:hover,
-  &__logo:focus {
-    color: var(--text-hover-color);
+    &:hover,
+    &:focus {
+      color: var(--text-hover-color);
+    }
   }
 
   /*.page-header__logo:hover,

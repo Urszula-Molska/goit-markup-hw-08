@@ -18,26 +18,19 @@
     }
   }
 
-  /*.header-contacts__item:hover,
-.header-contacts__item:focus {
-  color: var(--text-hover-color);
-}*/
-
   &__icon {
     margin-right: 10px;
     fill: currentColor;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &__icon--envelope {
-    width: 16px;
-    height: 12px;
-  }
-
-  &__icon--smartphone {
-    width: 10px;
-    height: 16px;
+    &--envelope {
+      width: 16px;
+      height: 12px;
+    }
+    &--smartphone {
+      width: 10px;
+      height: 16px;
+    }
   }
 }

@@ -2,6 +2,12 @@
   display: flex;
   margin-left: -5px;
   margin-right: -5px;
+  &--card-list {
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 30px;
+  }
 
   &__icon {
     fill: var(--icon-color);
@@ -25,22 +31,17 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &__address:hover,
-  &__address:focus {
-    background-color: var(--text-hover-color);
-    fill: var(--text-color-2);
-  }
-
-  &--card-list {
-    justify-content: center;
-    align-items: center;
-    margin-top: 16px;
-    margin-bottom: 30px;
+    &:hover,
+    &:focus {
+      background-color: var(--text-hover-color);
+      fill: var(--text-color-2);
+    }
+    &:hover > .social-links__icon {
+      fill: var(--text-color-2);
+    }
   }
 }
-
+/*
 .social-links__address:hover > .social-links__icon {
   fill: var(--text-color-2);
-}
+}*/

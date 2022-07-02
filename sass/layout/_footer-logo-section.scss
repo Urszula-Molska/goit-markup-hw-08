@@ -9,6 +9,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--text-hover-color);
+    }
   }
 
   &__address-details {
@@ -19,6 +23,7 @@
   &__contacts {
     color: var(--text-color-3);
   }
+
   &__contacts-item {
     text-decoration: none;
     color: var(--text-color-3);
@@ -26,15 +31,9 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &__contacts-item:hover,
-  &__contacts-item:focus {
-    color: var(--text-hover-color);
-  }
-
-  &__logo:hover,
-  &__logo:focus {
-    color: var(--text-hover-color);
+    &:hover,
+    &:focus {
+      color: var(--text-hover-color);
+    }
   }
 }

@@ -59,8 +59,16 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      .portfolio-gallery__overlay {
+        transform: translatey(0%);
+        cursor: default;
+      }
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
   }
-
   &__overlay {
     position: absolute;
     top: 0px;
@@ -78,16 +86,10 @@
     font-size: 18px;
     line-height: 1.555;
   }
-
-  &__card:hover,
-  &__card:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
 }
 
+/*
 .portfolio-gallery__card:hover .portfolio-gallery__overlay,
 .portfolio-gallery__card:focus .portfolio-gallery__overlay {
   transform: translatey(0%);
-  cursor: default;
-}
+  cursor: default;*/
