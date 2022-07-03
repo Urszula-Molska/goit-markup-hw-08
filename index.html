@@ -57,7 +57,6 @@
         <h1 class="baner__headline">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button class="baner__button button" type="button" data-modal-open>Zamów usługę</button>
       </section>
-      <!----
       <section class="lorem-ipsum container section">
         <ul class="lorem-ipsum__list">
           <li class="lorem-ipsum__item">
@@ -148,18 +147,19 @@
           </li>
         </ul>
       </section>
-      <div>
-        <section class="our-team container section">
+      <div class="our-team">
+        <section class="container section">
           <h2 class="our-team__title section__title">Nasz zespół</h2>
           <ul class="our-team__card-list">
             <li class="our-team__card-item">
               <figure class="our-team__picture">
-                <img
-                  src="images/product_designer.jpg"
-                  alt="picture of Product Designer"
-                  width="270"
-                  height="260"
-                />
+                <picture class="our-team__jpg">
+                 <source srcset="./images/product_designer-mobile.jpg 1x, images/product_designer-mobile@2x.jpg 2x" 
+                 media="(max-width: 767px)">
+                 <img
+                  src="./images/product_designer.jpg"
+                  alt="picture of Product Designer"/>
+                </picture>
                 <figcaption>
                   <h3 class="our-team__name">John Doe</h3>
                   <p class="our-team__position">Product Designer</p>
@@ -198,12 +198,14 @@
             </li>
             <li class="our-team__card-item">
               <figure class="our-team__picture">
+                <picture>
+                 <source srcset="images/frontend_developer-mobile.jpg-mobile.jpg 1x, images/frontend_developer-mobile@2x.jpg 2x" 
+                 media="(max-width: 767px)" type="image">
                 <img
                   src="images/frontend_developer.jpg"
                   alt="picture of Frontend Developer"
-                  width="270"
-                  height="260"
                 />
+                </picture>
                 <figcaption>
                   <h3 class="our-team__name">John Doe</h3>
                   <p class="our-team__position">Frontend Developer</p>
@@ -242,12 +244,17 @@
             </li>
             <li class="our-team__card-item">
               <figure class="our-team__picture">
+                <picture>
+                 <source srcset="images/marketing-mobile.jpg 1x, images/marketing-mobile@2x.jpg 2x" 
+                 media="(max-width: 767px)" type="image">
+               
                 <img
                   src="images/marketing.jpg"
                   alt="picture of Marketing Specialist"
                   width="270"
                   height="260"
                 />
+                </picture>
                 <figcaption>
                   <h3 class="our-team__name">John Doe</h3>
                   <p class="our-team__position">Marketing</p>
@@ -286,12 +293,14 @@
             </li>
             <li class="our-team__card-item">
               <figure class="our-team__picture">
+                <picture>
+                <source srcset="images/marketing-mobile.jpg 1x, images/marketing-mobile@2x.jpg 2x" 
+                 media="(max-width: 767px)" type="image">
                 <img
                   src="images/ui_designer.jpg"
                   alt=" picture of UI Designer"
-                  width="270"
-                  height="260"
                 />
+                </picture>
                 <figcaption>
                   <h3 class="our-team__name">John Doe</h3>
                   <p class="our-team__position">UI Designer</p>
@@ -331,6 +340,7 @@
           </ul>
         </section>
       </div>
+      <!---
       <section class="section container">
         <h2 class="section__title">Nasi klienci</h2>
         <ul class="our-customers">
