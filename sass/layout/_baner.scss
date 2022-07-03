@@ -6,6 +6,88 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  background-repeat: no-repeat;
+  &__headline {
+    color: var(--text-color-2);
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    margin-top: 30px;
+  }
+}
+
+/*@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .baner {
+      background-image: url('../images/backgound-mobile@2x.jpg');
+    }
+  }*/
+
+@media screen and (max-width: 767px) {
+  .baner {
+    background-size: 480px 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/background-mobile.jpg');
+    max-width: 480px;
+    height: 400px;
+    background-position: center top;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/background-mobile@2x.jpg');
+    }
+    &__headline {
+      font-size: 26px;
+      line-height: 1.6154;
+      max-width: 365px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .baner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/background-tablet.jpg');
+    background-size: 768px 400px;
+    max-width: 768px;
+    height: 400px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/background-tablet@2x.jpg');
+    }
+    &__headline {
+      font-size: 26px;
+      line-height: 1.6154;
+      max-width: 365px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .baner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/background-picture.jpg');
+    background-size: cover;
+    max-width: 1600px;
+    height: 600px;
+    &__headline {
+      color: var(--text-color-2);
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 696px;
+    }
+  }
+}
+
+/*DESKTOP*/
+/*.baner {
+  background-color: var(--background-color-1);
+  color: var(--text-color-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   height: 600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/background-picture.jpg');
@@ -27,4 +109,4 @@
   &__button {
     margin-top: 30px;
   }
-}
+}*/

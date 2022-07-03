@@ -39,27 +39,50 @@ body {
   font-weight: 400;
 }
 
+/* desktop
 .container {
   padding: 0 15px;
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
+} */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  max-width: 1200px;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin: 0 auto;
 }
 .section__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
+  font-size: 28px;
+  line-height: 1.1786;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
+/*
+@media screen and (max-width: 767) {
+}
+
+@media screen and (min-width: 768px) {
+}*/
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    font-size: 36px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+}
 .footer {
   color: var(--text-color-2);
   background-color: var(--background-color-1);
@@ -283,7 +306,7 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 2;
   cursor: pointer;
   border: none;
 }
@@ -494,26 +517,110 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: 600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-picture.jpg");
   background-repeat: no-repeat;
-  max-width: 1600px;
-  background-size: cover;
 }
 .baner__headline {
   color: var(--text-color-2);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  max-width: 696px;
 }
 .baner__button {
   margin-top: 30px;
 }
 
+/*@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .baner {
+      background-image: url('../images/backgound-mobile@2x.jpg');
+    }
+  }*/
+@media screen and (max-width: 767px) {
+  .baner {
+    background-size: 480px 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-mobile.jpg");
+    max-width: 480px;
+    height: 400px;
+    background-position: center top;
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .baner {
+    background-image: url("../images/background-mobile@2x.jpg");
+  }
+}
+@media screen and (max-width: 767px) {
+  .baner__headline {
+    font-size: 26px;
+    line-height: 1.6154;
+    max-width: 365px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .baner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-tablet.jpg");
+    background-size: 768px 400px;
+    max-width: 768px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .baner {
+    background-image: url("../images/background-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .baner__headline {
+    font-size: 26px;
+    line-height: 1.6154;
+    max-width: 365px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .baner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-picture.jpg");
+    background-size: cover;
+    max-width: 1600px;
+    height: 600px;
+  }
+  .baner__headline {
+    color: var(--text-color-2);
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
+}
+/*DESKTOP*/
+/*.baner {
+  background-color: var(--background-color-1);
+  color: var(--text-color-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/background-picture.jpg');
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  background-size: cover;
+
+  &__headline {
+    color: var(--text-color-2);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    max-width: 696px;
+  }
+
+  &__button {
+    margin-top: 30px;
+  }
+}*/
 .lorem-ipsum {
   padding-bottom: 0;
   background-color: var(--brand-background-color);
