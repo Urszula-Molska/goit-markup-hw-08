@@ -153,13 +153,18 @@
           <ul class="our-team__card-list">
             <li class="our-team__card-item">
               <figure class="our-team__picture">
-                <picture class="our-team__jpg">
-                 <source srcset="./images/product_designer-mobile.jpg 1x, images/product_designer-mobile@2x.jpg 2x" 
-                 media="(max-width: 767px)">
-                 <img
-                  src="./images/product_designer.jpg"
-                  alt="picture of Product Designer"/>
-                </picture>
+                <img 
+                 src="images/product_designer-mobile-450x460.jpg"
+                 srcset="
+                 images/product_designer-mobile-450x460.jpg     450w,
+                 images/product_designer-mobile@2x-900x920.jpg  900w,
+                 images/product_designer-tablet-354x374.jpg     354w,
+                 images/product_designer-tablet@2x-708x748.jpg  708w,
+                 images/product_designer-desktop-270x260.jpg    270w
+                 "
+                 alt="picture of Product Designer"
+                 sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width: 480px) 450px"
+                />
                 <figcaption>
                   <h3 class="our-team__name">John Doe</h3>
                   <p class="our-team__position">Product Designer</p>
@@ -198,14 +203,18 @@
             </li>
             <li class="our-team__card-item">
               <figure class="our-team__picture">
-                <picture>
-                 <source srcset="images/frontend_developer-mobile.jpg-mobile.jpg 1x, images/frontend_developer-mobile@2x.jpg 2x" 
-                 media="(max-width: 767px)" type="image">
-                <img
-                  src="images/frontend_developer.jpg"
-                  alt="picture of Frontend Developer"
-                />
-                </picture>
+                <img 
+                 src="images/frontend_developer-mobile.jpg"
+                 srcset="
+                 images/frontend_developer-mobile.jpg     450w,
+                 images/frontend_developer-mobile@2x.jpg  900w,
+                 images/frontend_developer-tablet.jpg     354w,
+                 images/frontend_developer-tablet@2x.jpg  708w,
+                 images/frontend_developer-desktop.jpg    270w
+                 "
+                 alt="picture of Frontend Developer"
+                 sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width: 480px) 450px"
+                  />
                 <figcaption>
                   <h3 class="our-team__name">John Doe</h3>
                   <p class="our-team__position">Frontend Developer</p>
@@ -244,17 +253,18 @@
             </li>
             <li class="our-team__card-item">
               <figure class="our-team__picture">
-                <picture>
-                 <source srcset="images/marketing-mobile.jpg 1x, images/marketing-mobile@2x.jpg 2x" 
-                 media="(max-width: 767px)" type="image">
-               
-                <img
-                  src="images/marketing.jpg"
-                  alt="picture of Marketing Specialist"
-                  width="270"
-                  height="260"
+                <img 
+                 src="images/marketing-mobile.jpg"
+                 srcset="
+                 images/marketing-mobile.jpg     450w,
+                 images/marketing-mobile@2x.jpg  900w,
+                 images/marketing-tablet.jpg     354w,
+                 images/marketing-tablet@2x.jpg  708w,
+                 images/marketing-desktop.jpg    270w
+                 "
+                 alt="picture of Marketing Specialist"
+                 sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width: 480px) 450px"
                 />
-                </picture>
                 <figcaption>
                   <h3 class="our-team__name">John Doe</h3>
                   <p class="our-team__position">Marketing</p>
@@ -293,14 +303,18 @@
             </li>
             <li class="our-team__card-item">
               <figure class="our-team__picture">
-                <picture>
-                <source srcset="images/marketing-mobile.jpg 1x, images/marketing-mobile@2x.jpg 2x" 
-                 media="(max-width: 767px)" type="image">
-                <img
-                  src="images/ui_designer.jpg"
-                  alt=" picture of UI Designer"
+              <img 
+                 src="images/ui_designer-mobile.jpg"
+                 srcset="
+                 images/ui_designer-mobile.jpg     450w,
+                 images/ui_designer-mobile@2x.jpg  900w,
+                 images/ui_designer-tablet.jpg     354w,
+                 images/ui_designer-tablet@2x.jpg  708w,
+                 images/ui_designer-desktop.jpg    270w
+                 "
+                 alt="picture of UI Designer"
+                 sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width: 480px) 450px"
                 />
-                </picture>
                 <figcaption>
                   <h3 class="our-team__name">John Doe</h3>
                   <p class="our-team__position">UI Designer</p>
