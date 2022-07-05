@@ -44,15 +44,18 @@
 @media screen and (max-width: 767px) {
   .lorem-ipsum__icon-card {
     width: 450px;
-    flex-basis: calc(100% / 2);
-    margin-top: not(1n) 30px;
+    margin-top: 30px;
   }
+
   .lorem-ipsum__title {
     text-align: center;
   }
   .lorem-ipsum__subtitle {
     width: 450px;
     height: 50px;
+  }
+  .lorem-ipsum__list {
+    margin-top: -30px;
   }
 }
 
