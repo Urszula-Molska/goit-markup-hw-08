@@ -102,16 +102,12 @@ body {
     padding-bottom: 60px;
   }
 }
-/*/*tablet*/
+/*tablet*/
 @media screen and (min-width: 768px) {
-  .footer__logo-section .join-us-section {
+  .footer__container {
     display: flex;
-    flex-direction: row;
   }
 }
-/*
-
-
 /*desktop*/
 @media screen and (min-width: 1200px) {
   .footer__container {
@@ -414,16 +410,15 @@ body {
     margin-top: 20px;
   }
 }
-/*/*tablet
+/*tablet*/
 @media screen and (min-width: 768px) {
   .newsletter-form {
     display: block;
-    &__container {
-      display: block;
-    }
+  }
+  .newsletter-form__container {
+    display: block;
   }
 }
-
 /*desktop*/
 @media screen and (min-width: 1200px) {
   .newsletter-form {
