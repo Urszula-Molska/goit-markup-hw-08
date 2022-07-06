@@ -2,11 +2,33 @@
   color: var(--text-color-2);
   background-color: var(--background-color-1);
   line-height: 1.71;
+
+  &__container {
+    padding-top: 60px;
+    /*align-items: baseline*/
+  }
+}
+/*mobile*/
+@media screen and (max-width: 767px) {
+  .footer__container {
+    padding-bottom: 60px;
+  }
 }
 
-.footer-columns {
-  display: flex;
-  padding-top: 60px;
-  padding-right: 60px;
-  align-items: baseline;
+/*tablet*/
+@media screen and (min-width: 768px) {
+  .footer__container--tablet {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+/*desktop*/
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    padding-right: 60px;
+    align-items: baseline;
+  }
 }

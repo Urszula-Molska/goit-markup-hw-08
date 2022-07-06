@@ -10,3 +10,9 @@
     color: var(--text-hover-color);
   }
 }
+/*mobile*/
+@media screen and (max-width: 767px) {
+  .logo {
+    margin-right: auto;
+  }
+}

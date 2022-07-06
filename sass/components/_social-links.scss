@@ -41,6 +41,19 @@
     }
   }
 }
+/*mobile*/
+@media screen and (max-width: 767px) {
+  .social-links {
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*desktop*/
+@media screen and (min-width: 1200px) {
+  .social-links--card-list {
+    padding-bottom: 30px;
+  }
+}
 /*
 .social-links__address:hover > .social-links__icon {
   fill: var(--text-color-2);

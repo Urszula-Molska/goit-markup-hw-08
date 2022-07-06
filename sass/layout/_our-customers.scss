@@ -43,6 +43,7 @@
 
   .our-customers {
     flex-wrap: wrap;
+    margin-bottom: -30px;
   }
 }
 
@@ -64,6 +65,6 @@
     margin-bottom: 30px;
   }
   .our-customers {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 }
