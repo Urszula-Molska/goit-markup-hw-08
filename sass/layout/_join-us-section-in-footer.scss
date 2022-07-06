@@ -25,11 +25,19 @@
 
 /*tablet*/
 @media screen and (min-width: 768px) {
+  .join-us-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 
 /*desktop*/
 @media screen and (min-width: 1200px) {
   .join-us-section {
+    display: flex;
     width: 206px;
     height: 80px;
     padding-bottom: 92px;
