@@ -15,14 +15,16 @@
   }
 }
 
-/*tablet*/
+/*/*tablet*/
 @media screen and (min-width: 768px) {
-  .footer__container--tablet {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+  .footer__logo-section {
+    .join-us-section {
+      display: flex;
+      flex-direction: row;
+    }
   }
-}
+} /*
+
 
 /*desktop*/
 @media screen and (min-width: 1200px) {

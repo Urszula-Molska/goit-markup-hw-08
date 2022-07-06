@@ -102,14 +102,16 @@ body {
     padding-bottom: 60px;
   }
 }
-/*tablet*/
+/*/*tablet*/
 @media screen and (min-width: 768px) {
-  .footer__container--tablet {
+  .footer__logo-section .join-us-section {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
   }
 }
+/*
+
+
 /*desktop*/
 @media screen and (min-width: 1200px) {
   .footer__container {
@@ -1235,14 +1237,6 @@ body {
   }
 }
 /*tablet*/
-@media screen and (min-width: 768px) {
-  .join-us-section {
-    width: 206px;
-    height: 80px;
-    margin-bottom: 102px;
-    margin-left: 144px;
-  }
-}
 /*desktop*/
 @media screen and (min-width: 1200px) {
   .join-us-section {
