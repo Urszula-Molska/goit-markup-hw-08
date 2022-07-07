@@ -28,10 +28,11 @@
 
 @media screen and (max-width: 767px) {
   .baner {
-    background-size: 480px 400px;
+    margin: 0 auto;
+    background-size: cover;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/background-mobile.jpg');
-    max-width: 480px;
+    /*width: 100%;*/
     height: 400px;
     background-position: center top;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -50,8 +51,8 @@
   .baner {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/background-tablet.jpg');
-    background-size: 768px 400px;
-    max-width: 768px;
+    background-size: cover;
+    width: 100%;
     height: 400px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),

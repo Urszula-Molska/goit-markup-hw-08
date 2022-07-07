@@ -626,6 +626,25 @@ body {
   margin-right: -25px;
   margin: 0 auto;
   height: 80px;
+  /*
+  /*mobile
+  @media screen and (max-width: 767px) {
+    .
+    }
+  }
+
+  /*tablet
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    }
+  }
+
+  /*desktop*
+  @media screen and (min-width: 1200px) {
+
+      }
+    }
+  }*/
   /*.page-header__logo:hover,
   .page-header__logo:focus,
   .menu__item:hover,
@@ -680,9 +699,10 @@ body {
   }*/
 @media screen and (max-width: 767px) {
   .baner {
-    background-size: 480px 400px;
+    margin: 0 auto;
+    background-size: cover;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-mobile.jpg");
-    max-width: 480px;
+    /*width: 100%;*/
     height: 400px;
     background-position: center top;
   }
@@ -702,8 +722,8 @@ body {
 @media screen and (min-width: 768px) {
   .baner {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-tablet.jpg");
-    background-size: 768px 400px;
-    max-width: 768px;
+    background-size: cover;
+    width: 100%;
     height: 400px;
   }
 }
@@ -804,7 +824,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .lorem-ipsum__icon-card {
-    width: 450px;
+    width: 100%;
     margin-top: 30px;
   }
 
@@ -813,23 +833,23 @@ body {
   }
 
   .lorem-ipsum__subtitle {
-    width: 450px;
+    width: 100%;
     height: 50px;
   }
 
   .lorem-ipsum__list {
     margin-top: -30px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 @media screen and (min-width: 768px) {
   .lorem-ipsum__icon-card {
-    width: 354px;
-    flex-basis: 50%;
+    display: flex;
     margin-top: false 30px;
   }
 
   .lorem-ipsum__subtitle {
-    width: 354px;
     margin-bottom: 30px;
   }
 
@@ -837,11 +857,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-basis: 50%;
     margin-left: -15px;
     margin-right: -15px;
   }
 
   .lorem-ipsum__item {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     margin-left: 15px;
     margin-right: 15px;
   }

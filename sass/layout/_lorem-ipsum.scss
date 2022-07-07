@@ -43,7 +43,7 @@
 
 @media screen and (max-width: 767px) {
   .lorem-ipsum__icon-card {
-    width: 450px;
+    width: 100%;
     margin-top: 30px;
   }
 
@@ -51,32 +51,37 @@
     text-align: center;
   }
   .lorem-ipsum__subtitle {
-    width: 450px;
+    width: 100%;
     height: 50px;
   }
   .lorem-ipsum__list {
     margin-top: -30px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .lorem-ipsum__icon-card {
-    width: 354px;
-    flex-basis: calc(100% / 2);
+    display: flex;
+
     margin-top: not(1n) 30px;
   }
   .lorem-ipsum__subtitle {
-    width: 354px;
     margin-bottom: 30px;
   }
   .lorem-ipsum__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-basis: calc(100% / 2);
     margin-left: -15px;
     margin-right: -15px;
   }
   .lorem-ipsum__item {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     margin-left: 15px;
     margin-right: 15px;
   }
