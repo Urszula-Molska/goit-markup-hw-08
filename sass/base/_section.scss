@@ -1,7 +1,18 @@
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
   margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 28px;
@@ -9,6 +20,12 @@
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.166;
+      letter-spacing: 0.03em;
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -17,18 +34,5 @@
     padding-top: 60px;
     padding-bottom: 60px;
     margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    &__title {
-      font-size: 36px;
-      line-height: 1.166;
-      letter-spacing: 0.03em;
-      margin-bottom: 50px;
-    }
   }
 }
