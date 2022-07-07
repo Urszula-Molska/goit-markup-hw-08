@@ -1,9 +1,4 @@
 .join-us-section {
-  /*width: 206px;
-  height: 80px;*/
-  /*padding-bottom: 92px;
-  margin-left: 70px;*/
-
   &__title {
     font-family: 'Roboto';
     font-weight: 700;
@@ -13,6 +8,7 @@
     margin-bottom: 20px;
   }
 }
+
 /*mobile*/
 @media screen and (max-width: 767px) {
   .join-us-section__title {

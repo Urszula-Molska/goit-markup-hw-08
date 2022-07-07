@@ -381,7 +381,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  /*margin-right: 12px;*/
   background: var(--background-color-1);
   padding-top: 15px;
   padding-left: 16px;
@@ -1227,12 +1226,6 @@ body {
   }
 }
 */
-.join-us-section {
-  /*width: 206px;
-  height: 80px;*/
-  /*padding-bottom: 92px;
-  margin-left: 70px;*/
-}
 .join-us-section__title {
   font-family: "Roboto";
   font-weight: 700;
