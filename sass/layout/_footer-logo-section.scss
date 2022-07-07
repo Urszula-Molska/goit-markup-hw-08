@@ -43,7 +43,7 @@
 }
 
 /*tablet*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-logo-section {
     display: flex;
     flex-direction: column;
@@ -51,7 +51,6 @@
     flex: 0 0 50%;
     max-width: 50%;
     margin-bottom: 60px;
-    margin-right: 0px;
     width: 253px;
     height: 79px;
   }

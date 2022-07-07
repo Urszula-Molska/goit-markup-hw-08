@@ -48,8 +48,9 @@
     align-items: center;
   }
 }
+
 /*desktop*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1999px) {
   .social-links--card-list {
     padding-bottom: 30px;
   }

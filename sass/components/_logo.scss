@@ -4,7 +4,6 @@
   font-size: 26px;
   line-height: 1.38;
   letter-spacing: 0.03em;
-  margin-right: 70px;
 
   &__web-part {
     color: var(--text-hover-color);
@@ -14,5 +13,12 @@
 @media screen and (max-width: 767px) {
   .logo {
     margin-right: auto;
+  }
+}
+
+/*desktop*/
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 70px;
   }
 }

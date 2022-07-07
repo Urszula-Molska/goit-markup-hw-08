@@ -93,7 +93,6 @@ body {
 }
 .footer__container {
   padding-top: 60px;
-  /*align-items: baseline*/
 }
 
 /*mobile*/
@@ -103,7 +102,7 @@ body {
   }
 }
 /*tablet*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
     display: flex;
     flex-wrap: wrap;
@@ -322,7 +321,7 @@ body {
   }
 }
 /*desktop*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1999px) {
   .social-links--card-list {
     padding-bottom: 30px;
   }
@@ -353,7 +352,6 @@ body {
   font-size: 26px;
   line-height: 1.38;
   letter-spacing: 0.03em;
-  margin-right: 70px;
 }
 .logo__web-part {
   color: var(--text-hover-color);
@@ -365,11 +363,14 @@ body {
     margin-right: auto;
   }
 }
+/*desktop*/
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 70px;
+  }
+}
 .newsletter-form {
   /*margin-left: auto;*/
-  /* &__container {
-    display: flex;
-  }*/
 }
 .newsletter-form__button {
   position: relative;
@@ -410,10 +411,15 @@ body {
   }
   .newsletter-form__button {
     margin-top: 20px;
+    display: block;
+    margin: 20px auto;
+  }
+  .newsletter-form__container {
+    width: 100%;
   }
 }
 /*tablet*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .newsletter-form {
     display: flex;
     flex-direction: column;
@@ -423,9 +429,13 @@ body {
   }
   .newsletter-form__container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     padding-bottom: 60px;
+  }
+  .newsletter-form__button {
+    margin-top: 20px;
   }
 }
 /*desktop*/
@@ -438,7 +448,6 @@ body {
   .newsletter-form__container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
   }
   .newsletter-form__button {
     position: relative;
@@ -1158,7 +1167,7 @@ body {
   }
 }
 /*tablet*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-logo-section {
     display: flex;
     flex-direction: column;
@@ -1166,7 +1175,6 @@ body {
     flex: 0 0 50%;
     max-width: 50%;
     margin-bottom: 60px;
-    margin-right: 0px;
     width: 253px;
     height: 79px;
   }
@@ -1245,19 +1253,19 @@ body {
   }
 }
 /*tablet*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .join-us-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 0 0 50%;
     max-width: 50%;
+    margin-bottom: 102px;
   }
 }
 /*desktop*/
 @media screen and (min-width: 1200px) {
   .join-us-section {
-    display: flex;
     width: 206px;
     height: 80px;
     padding-bottom: 92px;
