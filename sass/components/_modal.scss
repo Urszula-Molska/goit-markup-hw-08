@@ -3,8 +3,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  min-height: 581px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -31,5 +29,27 @@
       height: 11px;
       fill: #000000;
     }
+  }
+}
+
+/*mobile and tablet*/
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+    &__close-button-icon {
+      &:hover,
+      &:focus {
+        fill: var(--text-hover-color);
+      }
+    }
+  }
+}
+
+/*desktop*/
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
   }
 }

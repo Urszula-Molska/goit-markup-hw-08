@@ -4,9 +4,7 @@
   &__headline {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.172;
     text-align: center;
-    margin-top: 40px;
   }
 
   &__label {
@@ -46,7 +44,7 @@
 
   &__input {
     display: block;
-    width: 448px;
+    /*width: 448px;*/
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -55,7 +53,6 @@
   }
 
   &__comment {
-    width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -93,6 +90,46 @@
       width: 15px;
       height: 12px;
       border: none;
+    }
+  }
+}
+
+/*mobile and tablet*/
+@media screen and (max-width: 1199px) {
+  .contact-form {
+    &__headline {
+      line-height: 1.5;
+      margin-top: 40px;
+      margin-right: 40px;
+      margin-left: 40px;
+      width: 370px;
+      height: 60px;
+      padding: 5px 26px 5px 26px;
+      text-align: center;
+    }
+    &__input {
+      display: block;
+      width: 370px;
+    }
+    &__comment {
+      width: 370px;
+    }
+  }
+}
+
+/*desktop*/
+@media screen and (min-width: 1200px) {
+  .contact-form {
+    &__headline {
+      line-height: 1.172;
+      margin-top: 40px;
+    }
+    &__input {
+      display: block;
+      width: 448px;
+    }
+    &__comment {
+      width: 448px;
     }
   }
 }

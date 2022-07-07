@@ -122,8 +122,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  min-height: 581px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--brand-background-color);
@@ -150,6 +148,23 @@ body {
   fill: #000000;
 }
 
+/*mobile and tablet*/
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+  .modal__close-button-icon:hover, .modal__close-button-icon:focus {
+    fill: var(--text-hover-color);
+  }
+}
+/*desktop*/
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+}
 .backdrop {
   position: fixed;
   left: 0;
@@ -166,9 +181,7 @@ body {
 .contact-form__headline {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.172;
   text-align: center;
-  margin-top: 40px;
 }
 .contact-form__label {
   color: var(--text-color-1);
@@ -206,7 +219,7 @@ body {
 }
 .contact-form__input {
   display: block;
-  width: 448px;
+  /*width: 448px;*/
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -214,7 +227,6 @@ body {
   margin-top: 4px;
 }
 .contact-form__comment {
-  width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -251,6 +263,40 @@ body {
   border: none;
 }
 
+/*mobile and tablet*/
+@media screen and (max-width: 1199px) {
+  .contact-form__headline {
+    line-height: 1.5;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 370px;
+    height: 60px;
+    padding: 5px 26px 5px 26px;
+    text-align: center;
+  }
+  .contact-form__input {
+    display: block;
+    width: 370px;
+  }
+  .contact-form__comment {
+    width: 370px;
+  }
+}
+/*desktop*/
+@media screen and (min-width: 1200px) {
+  .contact-form__headline {
+    line-height: 1.172;
+    margin-top: 40px;
+  }
+  .contact-form__input {
+    display: block;
+    width: 448px;
+  }
+  .contact-form__comment {
+    width: 448px;
+  }
+}
 /*.contact-form .contact-form__label:focus-within {
   color: var(--text-hover-color);
   transition-property: color;
