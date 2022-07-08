@@ -2,6 +2,13 @@
   background-color: var(--brand-background-color);
   justify-content: center;
 
+  & {
+    img {
+      width: 370px;
+      height: 294px;
+    }
+  }
+
   &__item {
     margin-left: 15px;
     margin-right: 15px;
@@ -54,7 +61,8 @@
 /*desktop*/
 @media screen and (min-width: 1200px) {
   .what-we-do {
-    display: block;
+    display: contents;
+    padding-bottom: 94px;
   }
 }
 

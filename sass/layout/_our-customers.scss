@@ -1,13 +1,26 @@
+/*ul*/
 .our-customers {
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
-  margin-left: -15px;
-  margin-right: -15px;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
 
+  /*li*/
   &__item {
-    margin-left: 15px;
-    margin-right: 15px;
+    flex-basis: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 150px) / 6);
+    }
   }
 
   &__icon-card {
@@ -33,8 +46,8 @@
     height: 60px;
   }
 }
-
-/*mobile*/
+/*
+/*mobile*
 @media screen and (max-width: 767px) {
   .our-customers__icon-card {
     width: 210px;
@@ -47,7 +60,7 @@
   }
 }
 
-/*tablet*/
+/*tablet*
 @media screen and (min-width: 768px) {
   .our-customers__icon-card {
     width: 226px;
@@ -58,7 +71,7 @@
   }
 }
 
-/*desktop*/
+/*desktop*
 @media screen and (min-width: 1200px) {
   .our-customers__icon-card {
     width: 170px;
@@ -67,4 +80,4 @@
   .our-customers {
     flex-wrap: nowrap;
   }
-}
+*/

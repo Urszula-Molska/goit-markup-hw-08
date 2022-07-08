@@ -1,10 +1,7 @@
 .lorem-ipsum {
   background-color: var(--brand-background-color);
   margin: 0 auto;
-  @media screen and (max-width: 767px), (min-width: 768px), (min-width: 1200px) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+
   &__icon {
     width: 70px;
     height: 70px;
@@ -24,7 +21,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       padding-bottom: 45px;
     }
     @media screen and (min-width: 768px), (min-width: 1200px) {
