@@ -1,5 +1,9 @@
 .our-team {
   background-color: var(--background-color-2);
+  @media screen and (max-width: 767px), (min-width: 768px), (min-width: 1200px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   &_title {
     justify-content: center;
@@ -7,10 +11,12 @@
   &__card-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 768px), (min-width: 1200px) {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
   }
 
   &__card-item {
@@ -20,8 +26,29 @@
     background-color: var(--brand-background-color);
     text-align: center;
     margin-bottom: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+    @media screen and (max-width: 767px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+
+    /*tablet i desktop*/
+    @media screen and (min-width: 768px), (min-width: 1200px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    /*tablet*/
+    @media screen and (min-width: 768px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    @media screen and (min-width: 1200px) {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
   }
 
   &__picture {
@@ -35,43 +62,37 @@
     font-weight: 500;
     margin-bottom: 10px;
     margin-top: 30px;
-  }
+    @media screen and (max-width: 767px) {
+      font-weight: 500;
+      line-height: 1.1719;
+    }
 
-  &__position {
-    color: var(--text-color-1);
-  }
-}
-/*mobile*/
-@media screen and (max-width: 767px) {
-  /*.our-team__card-item {
-    margin-left: 15px;
-    margin-right: 15px;*/
-
-  .our-team__name {
-    font-weight: 500;
-    line-height: 1.1719;
+    &__position {
+      color: var(--text-color-1);
+    }
+    &__our-team__img {
+      object-fit: contain;
+    }
   }
 }
-
-/*tablet*/
+/*
+/*tablet
 @media screen and (min-width: 768px) {
-  .our-team__card-item {
-    flex: 0 0 50%;
-    max-width: 50%;
-    font-size: 16px;
-    line-height: 1.357;
-    letter-spacing: 0.03em;
-    background-color: var(--brand-background-color);
-    text-align: center;
-  }
-}
-/*desktop*/
-@media screen and (min-width: 1200px) {
-  .our-team__card-item {
-    flex: 0025%;
-    width: 25%;
-  }
-}
+  .our-team__card-list {
+    margin-left: -15px;
+    margin-right: -15px;
+    .our-team__card-item {
+      flex: 0050%;
+      width: 50%;
+      font-size: 16px;
+      line-height: 1.357;
+      letter-spacing: 0.03em;
+      background-color: var(--brand-background-color);
+      text-align: center;
+    }
+    /*.our-team__picture {
+    flex-basis: calc(100% / 2);
+  }*/
 
 /*.our-team {
   background-color: var(--background-color-2);
