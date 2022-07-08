@@ -1181,8 +1181,6 @@ img {
   }*/
 /*ul*/
 .our-customers {
-  padding-left: 15px;
-  padding-right: 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1427,10 +1425,19 @@ img {
   background-color: var(--brand-background-color);
 }
 
+/*ul*/
 .portfolio-gallery {
-  /*align-items: center;
-  justify-content: center;*/
-  margin: -15px -15px -15px -15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+  /*li*/
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-gallery__description {
+    padding-bottom: 20px;
+  }
 }
 .portfolio-gallery__picture {
   display: block;
@@ -1468,11 +1475,23 @@ img {
 .portfolio-gallery__item {
   background-color: var(--brand-background-color);
   list-style: none;
-  margin: 15px 15px 15px 15px;
-  max-height: 404px;
+  /*tablet*/
+  /*desktop*/
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-gallery__item {
+    flex-basis: calc((100% - 30px) / 2);
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-gallery__item {
+    flex-basis: calc((100% - 60px) / 3);
+    gap: 60px;
+  }
 }
 .portfolio-gallery__card {
-  margin: 0px auto;
+  margin: 0px;
   position: relative;
   overflow: hidden;
   transition-property: box-shadow;
