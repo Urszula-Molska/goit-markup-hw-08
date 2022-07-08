@@ -1003,7 +1003,6 @@ img {
 @media screen and (min-width: 1200px) {
   .what-we-do {
     display: contents;
-    padding-bottom: 94px;
   }
 }
 /*.what-we-do {
@@ -1047,6 +1046,11 @@ img {
 .our-team {
   background-color: var(--background-color-2);
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .our-team {
+    margin-top: 94px;
+  }
 }
 .our-team__img {
   margin: 0;
