@@ -730,6 +730,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-contacts {
     flex-direction: column;
+    display: flex;
   }
 }
 .header-contacts__item {
