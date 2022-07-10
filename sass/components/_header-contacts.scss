@@ -3,6 +3,10 @@
   flex-direction: row;
   margin-left: auto;
   align-items: center;
+  /*mobile*/
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   &__item {
     text-decoration: none;

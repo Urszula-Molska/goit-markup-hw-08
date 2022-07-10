@@ -52,13 +52,26 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu-nav">
+        <button
+          class="mobile-menu-nav__button menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-nav__icon">
+            <use href="./images/sprite.svg#icon-menu-nav"></use>
+          </svg>
+        </button>
+      </div>
       <div class="page-header__border-bottom"></div>
     </header>
     <main>
+      <!--baner--->
       <section class="baner">
         <h1 class="baner__headline">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button class="baner__button button" type="button" data-modal-open>Zamów usługę</button>
       </section>
+      <!--lorem-ipsum-->
       <section class="lorem-ipsum container section">
         <ul class="lorem-ipsum__list">
           <li class="lorem-ipsum__item">
@@ -488,6 +501,43 @@
         </form>
       </div>
     </footer>
+    <!--pull down menu (wysuwane menu)---->
+    <section class="pop-up-menu js-menu-container" id="mobile-menu">
+      <button class="pop-up-menu__close-btn js-close-menu menu-toggle">
+        <svg class="pop-up-menu__x">
+          <use href="./images/sprite.svg#icon-pop-up-menu-close__x"></use>
+        </svg>
+      </button>
+      <ul class="pop-up-menu__nav-list">
+        <li class="pop-up-menu__nav-list-item">
+          <a href="index.html" class="pop-up-menu__nav-list-link--active">Agencja</a>
+        </li>
+        <li class="pop-up-menu__nav-list-item">
+          <a href="portfolio.html" class="pop-up-menu__nav-list-link">Portfolio</a>
+        </li>
+        <li class="pop-up-menu__nav-list-item">
+          <a href="#" class="pop-up-menu__nav-list-link">Kontakt</a>
+        </li>
+      </ul>
+      <ul class="pop-up-menu__contact-list">
+        <li class="pop-up-menu__contact-list-item">
+          <a href="tel:+48111111111" class="pop-up-menu__contact-list-item-phone"
+            >+48 111 111 111</a
+          >
+        </li>
+        <li class="pop-up-menu__contact-list-item">
+          <a href="mailto:info@devstudio.com" class="pop-up-menu__contact-list-item-mail"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="pop-up-menu__social">
+        <li class="pop-up-menu__social-item">Instagram</li>
+        <li class="pop-up-menu__social-item">Twitter</li>
+        <li class="pop-up-menu__social-item">Facebook</li>
+        <li>LinkedIn</li>
+      </ul>
+    </section>
     <!---backdrop-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -549,5 +599,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer="" src="./js/mobile-menu.js"></script>
   </body>
 </html>

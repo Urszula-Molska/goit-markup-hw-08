@@ -180,6 +180,70 @@ img {
     min-height: 581px;
   }
 }
+.pop-up-menu {
+  /*tablet and desktop*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .pop-up-menu {
+    display: none;
+  }
+}
+.pop-up-menu.is-open {
+  transform: translateX(0);
+}
+.pop-up-menu__close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu-nav {
+  /*min-width: 320px;
+  max-width: 767px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 80px;*/
+  /*tablet and desktop*/
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu-nav {
+    display: none;
+  }
+}
+.mobile-menu-nav__button {
+  display: inline-block;
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+.mobile-menu-nav__icon {
+  width: 24px;
+}
+
 .backdrop {
   position: fixed;
   left: 0;
@@ -409,27 +473,28 @@ img {
 /*# sourceMappingURL=buttons.css.map */
 .logo {
   font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.38;
   letter-spacing: 0.03em;
+  line-height: 1.38;
+  /*mobile*/
+  /*tablet and desktop*/
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    font-weight: 400;
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 70px;
+    font-weight: 700;
+    font-size: 24px;
+  }
 }
 .logo__web-part {
   color: var(--text-hover-color);
 }
 
-/*mobile*/
-@media screen and (max-width: 767px) {
-  .logo {
-    margin-right: auto;
-  }
-}
-/*desktop*/
-@media screen and (min-width: 1200px) {
-  .logo {
-    margin-right: 70px;
-  }
-}
 .newsletter-form {
   /*margin-left: auto;*/
 }
@@ -567,6 +632,12 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  /*mobile*/
+}
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
 }
 .menu__item {
   text-decoration: none;
@@ -604,6 +675,12 @@ img {
   flex-direction: row;
   margin-left: auto;
   align-items: center;
+  /*mobile*/
+}
+@media screen and (max-width: 767px) {
+  .header-contacts {
+    display: none;
+  }
 }
 .header-contacts__item {
   text-decoration: none;
