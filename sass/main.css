@@ -1544,7 +1544,7 @@ img {
     height: 80px;
     padding-bottom: 92px;
     margin-left: 70px;
-    margin-right: 78px;
+    margin-right: auto;
   }
 }
 /*.join-us-section {
