@@ -197,17 +197,23 @@ img {
   padding-bottom: 48px;
 }
 .pop-up-menu__close-btn {
-  width: 18.7px;
-  height: 18.7px;
+  /*padding: 11px 10.33px 11px 10.33px;*/
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: 21px;
-  right: 25.33px;
+  z-index: 1000;
+  top: 10px;
+  right: 15px;
   display: flex;
+  align-items: center;
   justify-content: center;
   border: none;
+  outline: none;
   background-color: var(--brand-background-color);
 }
 .pop-up-menu__x {
+  width: 19px;
+  height: 19px;
   fill: var(--brand-color);
 }
 .pop-up-menu__x:hover, .pop-up-menu__x:focus {
