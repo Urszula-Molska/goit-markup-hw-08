@@ -53,6 +53,7 @@
 
   &__nav-list-link {
     text-decoration: none;
+    color: var(--brand-color);
   }
   &__nav-list-link--active {
     color: var(--text-hover-color);
@@ -62,21 +63,23 @@
     margin-top: 266px;
     font-weight: 500;
     line-height: 1.172;
+    &-phone {
+      margin-bottom: 32px;
+    }
+    &-mail {
+      margin-bottom: 64px;
+    }
   }
 
-  &__contact-list-phone {
+  &__contact-list-link-phone {
     font-size: 34px;
     color: var(--text-hover-color);
-    margin-bottom: 32px;
+    text-decoration: none;
   }
 
-  &__contact-list-mail {
+  &__contact-list-link-mail {
     font-size: 24px;
     color: var(--text-color-1);
-    margin-bottom: 64px;
-  }
-
-  &__contact-list-link {
     text-decoration: none;
   }
 

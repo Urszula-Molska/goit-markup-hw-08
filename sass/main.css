@@ -224,6 +224,7 @@ img {
 }
 .pop-up-menu__nav-list-link {
   text-decoration: none;
+  color: var(--brand-color);
 }
 .pop-up-menu__nav-list-link--active {
   color: var(--text-hover-color);
@@ -234,16 +235,19 @@ img {
   line-height: 1.172;
 }
 .pop-up-menu__contact-list-phone {
-  font-size: 34px;
-  color: var(--text-hover-color);
   margin-bottom: 32px;
 }
 .pop-up-menu__contact-list-mail {
-  font-size: 24px;
-  color: var(--text-color-1);
   margin-bottom: 64px;
 }
-.pop-up-menu__contact-list-link {
+.pop-up-menu__contact-list-link-phone {
+  font-size: 34px;
+  color: var(--text-hover-color);
+  text-decoration: none;
+}
+.pop-up-menu__contact-list-link-mail {
+  font-size: 24px;
+  color: var(--text-color-1);
   text-decoration: none;
 }
 .pop-up-menu__social {
@@ -512,9 +516,7 @@ img {
   line-height: 2;
   cursor: pointer;
   border: none;
-}
-
-/*# sourceMappingURL=buttons.css.map */
+} /*# sourceMappingURL=buttons.css.map */
 .logo {
   font-family: "Raleway";
   letter-spacing: 0.03em;
@@ -1512,7 +1514,6 @@ img {
   .join-us-section__title {
     text-align: center;
   }
-
   .join-us-section {
     margin-bottom: 60px;
   }
