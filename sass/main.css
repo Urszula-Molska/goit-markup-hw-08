@@ -155,15 +155,27 @@ img {
   height: 11px;
   fill: #000000;
 }
+.modal__close-button-icon:hover, .modal__close-button-icon:focus {
+  fill: var(--text-hover-color);
+}
 
-/*mobile and tablet*/
-@media screen and (max-width: 1199px) {
+/*mobile*/
+@media screen and (max-width: 767px) {
   .modal {
-    width: 450px;
-    min-height: 609px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    min-width: 320px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 609px;
   }
-  .modal__close-button-icon:hover, .modal__close-button-icon:focus {
-    fill: var(--text-hover-color);
+}
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+    height: 609px;
   }
 }
 /*desktop*/
@@ -325,7 +337,6 @@ img {
   display: block;
   justify-content: flex-start;
   text-align: left;
-  margin-left: 40px;
   position: relative;
 }
 .contact-form__label:focus-within {
@@ -396,8 +407,37 @@ img {
   border: none;
 }
 
-/*mobile and tablet*/
-@media screen and (max-width: 1199px) {
+/*mobile*/
+@media screen and (max-width: 767px) {
+  .contact-form__headline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 1.5;
+    margin-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    /*word-wrap: normal;*/
+    /*margin-right: 40px;*/
+    /*margin-right: auto;
+    max-width: 370px;
+    width: 100%;
+    /*height: 60px;*/
+    /*padding: 5px 26px 5px 26px;*/
+    /*text-align: center;*/
+  }
+  .contact-form__input {
+    width: 100%;
+  }
+  .contact-form__comment {
+    width: 100%;
+  }
+  .contact-form__label {
+    width: 100%;
+  }
+}
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-form__headline {
     line-height: 1.5;
     margin-top: 40px;
@@ -407,6 +447,9 @@ img {
     height: 60px;
     padding: 5px 26px 5px 26px;
     text-align: center;
+  }
+  .contact-form__label {
+    margin-left: 40px;
   }
   .contact-form__input {
     display: block;
@@ -646,7 +689,9 @@ img {
 }
 .checkbox-container__regulations-and-privacy-policy {
   display: block;
-  text-align: center;
+  flex-wrap: nowrap;
+  font-size: 12px;
+  /*text-align: center;*/
   margin-top: 20px;
 }
 .checkbox-container__regulations-and-privacy-policy::before {

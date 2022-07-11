@@ -5,7 +5,9 @@
 
   &__regulations-and-privacy-policy {
     display: block;
-    text-align: center;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    /*text-align: center;*/
     margin-top: 20px;
     &::before {
       display: inline-block;
