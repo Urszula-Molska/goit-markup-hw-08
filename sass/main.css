@@ -162,7 +162,7 @@ img {
 /*mobile*/
 @media screen and (max-width: 767px) {
   .modal {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     width: 100%;
     max-width: 450px;
     min-width: 320px;
@@ -322,6 +322,8 @@ img {
 
 .contact-form {
   margin: 0px;
+  display: flex;
+  flex-direction: column;
 }
 .contact-form__headline {
   font-weight: 700;
@@ -334,8 +336,8 @@ img {
   line-height: 1.1666;
   letter-spacing: 0.01em;
   margin-top: 12px;
-  display: block;
-  justify-content: flex-start;
+  /*display: block;*/
+  /*justify-content: flex-start;*/
   text-align: left;
   position: relative;
 }
@@ -367,7 +369,7 @@ img {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 42px;
+  /*padding-left: 42px;*/
   margin-top: 4px;
 }
 .contact-form__comment {
@@ -406,25 +408,18 @@ img {
   height: 12px;
   border: none;
 }
+.contact-form__submit-button button {
+  display: flex;
+  justify-content: center;
+}
 
 /*mobile*/
 @media screen and (max-width: 767px) {
   .contact-form__headline {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     line-height: 1.5;
     margin-top: 40px;
     padding-left: 25px;
     padding-right: 25px;
-    /*word-wrap: normal;*/
-    /*margin-right: 40px;*/
-    /*margin-right: auto;
-    max-width: 370px;
-    width: 100%;
-    /*height: 60px;*/
-    /*padding: 5px 26px 5px 26px;*/
-    /*text-align: center;*/
   }
   .contact-form__input {
     width: 100%;
@@ -682,15 +677,10 @@ img {
     width: 358px;
   }
 }
-.checkbox-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .checkbox-container__regulations-and-privacy-policy {
   display: block;
-  flex-wrap: nowrap;
   font-size: 12px;
+  justify-content: center;
   /*text-align: center;*/
   margin-top: 20px;
 }
@@ -700,15 +690,11 @@ img {
   width: 16px;
   height: 15px;
   border: 1px solid var(--brand-color);
-  margin-right: 8px;
   cursor: pointer;
 }
 .checkbox-container__regulations-and-privacy-policy a {
   color: var(--text-hover-color);
   line-height: 1.7143;
-}
-.checkbox-container__submit-button {
-  margin: 30px 164px 40px 164px;
 }
 .checkbox-container__policy-text {
   opacity: 0;

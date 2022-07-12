@@ -1,12 +1,8 @@
 .checkbox-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   &__regulations-and-privacy-policy {
     display: block;
-    flex-wrap: nowrap;
     font-size: 12px;
+    justify-content: center;
     /*text-align: center;*/
     margin-top: 20px;
     &::before {
@@ -15,17 +11,12 @@
       width: 16px;
       height: 15px;
       border: 1px solid var(--brand-color);
-      margin-right: 8px;
       cursor: pointer;
     }
     & a {
       color: var(--text-hover-color);
       line-height: 1.7143;
     }
-  }
-
-  &__submit-button {
-    margin: 30px 164px 40px 164px;
   }
 
   &__policy-text {

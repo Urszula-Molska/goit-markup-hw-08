@@ -1,5 +1,7 @@
 .contact-form {
   margin: 0px;
+  display: flex;
+  flex-direction: column;
 
   &__headline {
     font-weight: 700;
@@ -13,8 +15,8 @@
     line-height: 1.1666;
     letter-spacing: 0.01em;
     margin-top: 12px;
-    display: block;
-    justify-content: flex-start;
+    /*display: block;*/
+    /*justify-content: flex-start;*/
     text-align: left;
     position: relative;
     &:focus-within {
@@ -47,7 +49,7 @@
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding-left: 42px;
+    /*padding-left: 42px;*/
     margin-top: 4px;
   }
 
@@ -91,28 +93,25 @@
       border: none;
     }
   }
+
+  &__submit-button {
+    button {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 /*mobile*/
 @media screen and (max-width: 767px) {
   .contact-form {
     &__headline {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
       line-height: 1.5;
       margin-top: 40px;
       padding-left: 25px;
       padding-right: 25px;
-      /*word-wrap: normal;*/
-      /*margin-right: 40px;*/
-      /*margin-right: auto;
-      max-width: 370px;
-      width: 100%;
-      /*height: 60px;*/
-      /*padding: 5px 26px 5px 26px;*/
-      /*text-align: center;*/
     }
+
     &__input {
       width: 100%;
     }
