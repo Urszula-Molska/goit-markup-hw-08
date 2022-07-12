@@ -3,8 +3,7 @@
     display: block;
     font-size: 12px;
     justify-content: center;
-    /*text-align: center;*/
-    margin-top: 20px;
+
     &::before {
       display: inline-block;
       content: '';
@@ -12,6 +11,7 @@
       height: 15px;
       border: 1px solid var(--brand-color);
       cursor: pointer;
+      margin-right: 8px;
     }
     & a {
       color: var(--text-hover-color);

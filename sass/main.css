@@ -126,6 +126,8 @@ img {
   }
 }
 .modal {
+  padding-left: 40px;
+  padding-right: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -160,29 +162,20 @@ img {
 }
 
 /*mobile*/
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 303px) and (max-width: 1199px) {
   .modal {
-    /*margin: 0 auto;*/
     width: 100%;
     max-width: 450px;
     min-width: 320px;
-    padding-left: 40px;
-    padding-right: 40px;
-    height: 609px;
-  }
-}
-/*tablet*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .modal {
-    max-width: 450px;
-    height: 609px;
+    min-height: 609px;
   }
 }
 /*desktop*/
 @media screen and (min-width: 1200px) {
   .modal {
+    /*width: 100%;*/
     width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 }
 .pop-up-menu {
@@ -321,7 +314,6 @@ img {
 }
 
 .contact-form {
-  margin: 0px;
   display: flex;
   flex-direction: column;
 }
@@ -329,8 +321,13 @@ img {
   font-weight: 700;
   font-size: 20px;
   text-align: center;
+  line-height: 1.5;
+  margin-top: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .contact-form__label {
+  width: 100%;
   color: var(--text-color-1);
   font-size: 12px;
   line-height: 1.1666;
@@ -371,6 +368,7 @@ img {
   border-radius: 4px;
   /*padding-left: 42px;*/
   margin-top: 4px;
+  width: 100%;
 }
 .contact-form__comment {
   height: 120px;
@@ -382,6 +380,7 @@ img {
   color: var(--text-color-1);
   resize: none;
   margin-top: 4px;
+  width: 100%;
 }
 .contact-form__comment:focus-within {
   border-color: var(--text-hover-color);
@@ -408,66 +407,72 @@ img {
   height: 12px;
   border: none;
 }
-.contact-form__submit-button button {
-  display: flex;
-  justify-content: center;
+.contact-form__submit-button {
+  align-self: center;
+  margin-top: 30px;
 }
 
-/*mobile*/
-@media screen and (max-width: 767px) {
-  .contact-form__headline {
-    line-height: 1.5;
-    margin-top: 40px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  .contact-form__input {
-    width: 100%;
-  }
-  .contact-form__comment {
-    width: 100%;
-  }
-  .contact-form__label {
-    width: 100%;
-  }
-}
-/*tablet*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contact-form__headline {
-    line-height: 1.5;
-    margin-top: 40px;
-    margin-right: 40px;
-    margin-left: 40px;
-    width: 370px;
-    height: 60px;
-    padding: 5px 26px 5px 26px;
-    text-align: center;
-  }
-  .contact-form__label {
-    margin-left: 40px;
-  }
-  .contact-form__input {
-    display: block;
-    width: 370px;
-  }
-  .contact-form__comment {
-    width: 370px;
-  }
-}
-/*desktop*/
+/*mobile*
 @media screen and (min-width: 1200px) {
-  .contact-form__headline {
-    line-height: 1.172;
-    margin-top: 40px;
-  }
-  .contact-form__input {
-    display: block;
-    width: 448px;
-  }
-  .contact-form__comment {
-    width: 448px;
+  .contact-form {
+    &__headline {
+    }
+
+    &__input {
+      width: 100%;
+    }
+    &__comment {
+      width: 100%;
+    }
+    &__label {
+      width: 100%;
+    }
   }
 }
+/*
+/*tablet*
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-form {
+    &__headline {
+      line-height: 1.5;
+      margin-top: 40px;
+      margin-right: 40px;
+      margin-left: 40px;
+      width: 370px;
+      height: 60px;
+      padding: 5px 26px 5px 26px;
+      text-align: center;
+    }
+    &__label {
+      margin-left: 40px;
+    }
+    &__input {
+      display: block;
+      width: 370px;
+    }
+    &__comment {
+      width: 370px;
+    }
+  }
+}
+
+/*desktop*
+@media screen and (min-width: 1200px) {
+  .contact-form {
+    &__headline {
+      line-height: 1.172;
+      margin-top: 40px;
+    }
+    &__input {
+      display: block;
+      width: 448px;
+    }
+    &__comment {
+      width: 448px;
+    }
+  }
+}
+
 /*.contact-form .contact-form__label:focus-within {
   color: var(--text-hover-color);
   transition-property: color;
@@ -681,8 +686,6 @@ img {
   display: block;
   font-size: 12px;
   justify-content: center;
-  /*text-align: center;*/
-  margin-top: 20px;
 }
 .checkbox-container__regulations-and-privacy-policy::before {
   display: inline-block;
@@ -691,6 +694,7 @@ img {
   height: 15px;
   border: 1px solid var(--brand-color);
   cursor: pointer;
+  margin-right: 8px;
 }
 .checkbox-container__regulations-and-privacy-policy a {
   color: var(--text-hover-color);
