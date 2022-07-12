@@ -7,6 +7,11 @@
     display: none;
   }
 
+  /*tablet*/
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    margin-left: 83px;
+  }
+
   &__item {
     text-decoration: none;
     color: var(--brand-color);
@@ -15,6 +20,11 @@
     letter-spacing: 0.02em;
     margin-left: 23px;
     margin-right: 23px;
+    /*tablet*/
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+      gap: 60px;
+    }
+
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

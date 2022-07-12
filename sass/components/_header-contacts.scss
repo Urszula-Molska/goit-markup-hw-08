@@ -3,6 +3,7 @@
   flex-direction: row;
   margin-left: auto;
   align-items: center;
+  justify-content: center;
   /*mobile*/
   @media screen and (max-width: 767px) {
     display: none;
@@ -11,6 +12,14 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-direction: column;
     display: flex;
+  }
+
+  &__list {
+    /*tablet*/
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      align-content: center;
+    }
   }
 
   &__item {
